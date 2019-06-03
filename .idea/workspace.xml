@@ -1,0 +1,1586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c5260c51-8a09-4ef1-b9b5-75d3110b6677" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/niv_zilberman.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/profit-calculator.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graphql.config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/graphql.schema.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/schema.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/components/Auth/Signin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/components/Auth/Signout.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/components/Auth/Signup.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/components/CoinSelector.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/components/Error.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/components/Home.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/components/Navbar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/components/Profile/UserEntries.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/components/Profile/UserInfo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/components/Profile/UserProfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/components/Profile/UserStories.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/components/Story/AddStory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/components/Story/LikeStory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/components/Story/SearchStory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/components/Story/StoriesByCategory.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/components/Story/StoriesByUsername.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/components/Story/StoryCard.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/components/Story/StoryPage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/components/Story/addEntry.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/components/withAuth.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/components/withSession.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/queries/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/client/styles/date-picker.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/server/.env" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/server/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/server/models/Entry.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/server/models/Story.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/server/models/User.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/server/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/server/resolvers.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/server/schema.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/server/server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/server/yarn.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.38807017">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/client/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="870">
+                  <caret line="77" column="52" lean-forward="false" selection-start-line="77" selection-start-column="52" selection-end-line="77" selection-end-column="52" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LikeStory.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/client/components/Story/LikeStory.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="225">
+                  <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+                  <folding>
+                    <element signature="e#0#40#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/server/server.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="555">
+                  <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UserStories.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/client/components/Profile/UserStories.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/client/queries/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="259">
+                  <caret line="72" column="22" lean-forward="false" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="22" />
+                  <folding>
+                    <marker date="1559552917000" expanded="true" signature="64:231" ph="mutation...{&#10;&#9;&#9;signupUser (username: $username, email: $email, password: $password) {&#10;&#9;&#9;&#9;token&#10;&#9;&#9;}&#10;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="73:83" ph="signupUser...signupUser" />
+                    <marker date="1559552917000" expanded="true" signature="83:140" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="95:101" ph="String...String" />
+                    <marker date="1559552917000" expanded="true" signature="112:118" ph="String...String" />
+                    <marker date="1559552917000" expanded="true" signature="132:138" ph="String...String" />
+                    <marker date="1559552917000" expanded="true" signature="141:231" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="145:155" ph="signupUser...signupUser" />
+                    <marker date="1559552917000" expanded="true" signature="145:228" ph="signupUser...{&#10;&#9;&#9;&#9;token&#10;&#9;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="156:213" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="157:165" ph="username...username" />
+                    <marker date="1559552917000" expanded="true" signature="178:183" ph="email...email" />
+                    <marker date="1559552917000" expanded="true" signature="193:201" ph="password...password" />
+                    <marker date="1559552917000" expanded="true" signature="214:228" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="219:224" ph="token...token" />
+                    <marker date="1559552917000" expanded="true" signature="268:403" ph="mutation...{&#10;&#9;&#9;signinUser (username: $username, password: $password) {&#10;&#9;&#9;&#9;token&#10;&#9;&#9;}&#10;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="277:287" ph="signinUser...signinUser" />
+                    <marker date="1559552917000" expanded="true" signature="287:327" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="299:305" ph="String...String" />
+                    <marker date="1559552917000" expanded="true" signature="319:325" ph="String...String" />
+                    <marker date="1559552917000" expanded="true" signature="328:403" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="332:342" ph="signinUser...signinUser" />
+                    <marker date="1559552917000" expanded="true" signature="332:400" ph="signinUser...{&#10;&#9;&#9;&#9;token&#10;&#9;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="343:385" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="344:352" ph="username...username" />
+                    <marker date="1559552917000" expanded="true" signature="365:373" ph="password...password" />
+                    <marker date="1559552917000" expanded="true" signature="386:400" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="391:396" ph="token...token" />
+                    <marker date="1559552917000" expanded="true" signature="445:604" ph="query...{&#10;&#9;&#9;getCurrentUser {&#10;&#9;&#9;&#9;email&#10;&#9;&#9;&#9;username&#10;&#9;&#9;&#9;favorites {&#10;&#9;&#9;&#9;&#9;id &#10;&#9;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;}&#10;&#9;&#9;}&#10;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="451:465" ph="getCurrentUser...getCurrentUser" />
+                    <marker date="1559552917000" expanded="true" signature="466:604" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="470:484" ph="getCurrentUser...getCurrentUser" />
+                    <marker date="1559552917000" expanded="true" signature="470:601" ph="getCurrentUser...{&#10;&#9;&#9;&#9;email&#10;&#9;&#9;&#9;username&#10;&#9;&#9;&#9;favorites {&#10;&#9;&#9;&#9;&#9;id &#10;&#9;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;}&#10;&#9;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="485:601" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="490:495" ph="email...email" />
+                    <marker date="1559552917000" expanded="true" signature="499:507" ph="username...username" />
+                    <marker date="1559552917000" expanded="true" signature="511:520" ph="favorites...favorites" />
+                    <marker date="1559552917000" expanded="true" signature="511:544" ph="favorites...{&#10;&#9;&#9;&#9;&#9;id &#10;&#9;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="521:544" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="527:529" ph="id...id" />
+                    <marker date="1559552917000" expanded="true" signature="534:539" ph="title...title" />
+                    <marker date="1559552917000" expanded="true" signature="548:555" ph="entries...entries" />
+                    <marker date="1559552917000" expanded="true" signature="548:597" ph="entries...{&#10;&#9;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;&#9;date&#10;&#9;&#9;&#9;&#9;coin&#10;&#9;&#9;&#9;&#9;amount&#10;&#9;&#9;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="555:597" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="561:563" ph="id...id" />
+                    <marker date="1559552917000" expanded="true" signature="568:572" ph="date...date" />
+                    <marker date="1559552917000" expanded="true" signature="577:581" ph="coin...coin" />
+                    <marker date="1559552917000" expanded="true" signature="586:592" ph="amount...amount" />
+                    <marker date="1559552917000" expanded="true" signature="638:809" ph="query...{&#10;&#9;&#9;getFeed (cursor: $cursor) {&#10;&#9;&#9;&#9;cursor&#10;&#9;&#9;&#9;stories {&#10;&#9;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;&#9;likes&#10;&#9;&#9;&#9;&#9;author&#10;&#9;&#9;&#9;}&#10;&#9;&#9;}&#10;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="644:656" ph="getFeedQuery...getFeedQuery" />
+                    <marker date="1559552917000" expanded="true" signature="657:674" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="667:673" ph="String...String" />
+                    <marker date="1559552917000" expanded="true" signature="675:809" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="679:686" ph="getFeed...getFeed" />
+                    <marker date="1559552917000" expanded="true" signature="679:806" ph="getFeed...{&#10;&#9;&#9;&#9;cursor&#10;&#9;&#9;&#9;stories {&#10;&#9;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;&#9;likes&#10;&#9;&#9;&#9;&#9;author&#10;&#9;&#9;&#9;}&#10;&#9;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="687:704" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="688:694" ph="cursor...cursor" />
+                    <marker date="1559552917000" expanded="true" signature="705:806" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="710:716" ph="cursor...cursor" />
+                    <marker date="1559552917000" expanded="true" signature="720:727" ph="stories...stories" />
+                    <marker date="1559552917000" expanded="true" signature="720:798" ph="stories...{&#10;&#9;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;&#9;likes&#10;&#9;&#9;&#9;&#9;author&#10;&#9;&#9;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="728:798" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="734:736" ph="id...id" />
+                    <marker date="1559552917000" expanded="true" signature="741:746" ph="title...title" />
+                    <marker date="1559552917000" expanded="true" signature="751:759" ph="imageUrl...imageUrl" />
+                    <marker date="1559552917000" expanded="true" signature="764:772" ph="category...category" />
+                    <marker date="1559552917000" expanded="true" signature="777:782" ph="likes...likes" />
+                    <marker date="1559552917000" expanded="true" signature="787:793" ph="author...author" />
+                    <marker date="1559552917000" expanded="true" signature="845:991" ph="query...{&#10;&#9;&#9;getStory (id: $id) {&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;&#9;likes&#10;&#9;&#9;}&#10;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="851:864" ph="getStoryQuery...getStoryQuery" />
+                    <marker date="1559552917000" expanded="true" signature="865:875" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="871:873" ph="ID...ID" />
+                    <marker date="1559552917000" expanded="true" signature="876:991" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="880:888" ph="getStory...getStory" />
+                    <marker date="1559552917000" expanded="true" signature="880:988" ph="getStory...{&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;&#9;likes&#10;&#9;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="889:898" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="890:892" ph="id...id" />
+                    <marker date="1559552917000" expanded="true" signature="899:988" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="904:906" ph="id...id" />
+                    <marker date="1559552917000" expanded="true" signature="910:915" ph="title...title" />
+                    <marker date="1559552917000" expanded="true" signature="919:927" ph="imageUrl...imageUrl" />
+                    <marker date="1559552917000" expanded="true" signature="931:942" ph="description...description" />
+                    <marker date="1559552917000" expanded="true" signature="946:954" ph="category...category" />
+                    <marker date="1559552917000" expanded="true" signature="958:962" ph="text...text" />
+                    <marker date="1559552917000" expanded="true" signature="966:975" ph="createdAt...createdAt" />
+                    <marker date="1559552917000" expanded="true" signature="979:984" ph="likes...likes" />
+                    <marker date="1559552917000" expanded="true" signature="1033:1218" ph="query...{&#10;&#9;&#9;getUserStories (username: $username) {&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;&#9;likes&#10;&#9;&#9;&#9;author&#10;&#9;&#9;}&#10;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="1039:1053" ph="getUserStories...getUserStories" />
+                    <marker date="1559552917000" expanded="true" signature="1054:1074" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="1066:1072" ph="String...String" />
+                    <marker date="1559552917000" expanded="true" signature="1075:1218" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="1079:1093" ph="getUserStories...getUserStories" />
+                    <marker date="1559552917000" expanded="true" signature="1079:1215" ph="getUserStories...{&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;&#9;likes&#10;&#9;&#9;&#9;author&#10;&#9;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="1094:1115" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="1095:1103" ph="username...username" />
+                    <marker date="1559552917000" expanded="true" signature="1116:1215" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="1121:1123" ph="id...id" />
+                    <marker date="1559552917000" expanded="true" signature="1127:1132" ph="title...title" />
+                    <marker date="1559552917000" expanded="true" signature="1136:1144" ph="imageUrl...imageUrl" />
+                    <marker date="1559552917000" expanded="true" signature="1148:1159" ph="description...description" />
+                    <marker date="1559552917000" expanded="true" signature="1163:1171" ph="category...category" />
+                    <marker date="1559552917000" expanded="true" signature="1175:1179" ph="text...text" />
+                    <marker date="1559552917000" expanded="true" signature="1183:1192" ph="createdAt...createdAt" />
+                    <marker date="1559552917000" expanded="true" signature="1196:1201" ph="likes...likes" />
+                    <marker date="1559552917000" expanded="true" signature="1205:1211" ph="author...author" />
+                    <marker date="1559552917000" expanded="true" signature="1260:1381" ph="query...{&#10;&#9;&#9;getUserEntries (username: $username){&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;date&#10;&#9;&#9;&#9;coin&#10;&#9;&#9;&#9;amount&#10;&#9;&#9;}&#10;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="1266:1280" ph="getUserEntries...getUserEntries" />
+                    <marker date="1559552917000" expanded="true" signature="1281:1301" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="1293:1299" ph="String...String" />
+                    <marker date="1559552917000" expanded="true" signature="1301:1381" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="1305:1319" ph="getUserEntries...getUserEntries" />
+                    <marker date="1559552917000" expanded="true" signature="1305:1378" ph="getUserEntries...{&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;date&#10;&#9;&#9;&#9;coin&#10;&#9;&#9;&#9;amount&#10;&#9;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="1320:1341" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="1321:1329" ph="username...username" />
+                    <marker date="1559552917000" expanded="true" signature="1341:1378" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="1346:1348" ph="id...id" />
+                    <marker date="1559552917000" expanded="true" signature="1352:1356" ph="date...date" />
+                    <marker date="1559552917000" expanded="true" signature="1360:1364" ph="coin...coin" />
+                    <marker date="1559552917000" expanded="true" signature="1368:1374" ph="amount...amount" />
+                    <marker date="1559552917000" expanded="true" signature="1431:1633" ph="query...{&#10;&#9;&#9;getStoriesByCategory (category: $category) {&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;&#9;likes&#10;&#9;&#9;&#9;author&#10;&#9;&#9;}&#10;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="1437:1462" ph="getStoriesByCategoryQuery...getStoriesByCategoryQuery" />
+                    <marker date="1559552917000" expanded="true" signature="1463:1483" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="1475:1481" ph="String...String" />
+                    <marker date="1559552917000" expanded="true" signature="1484:1633" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="1488:1508" ph="getStoriesByCategory...getStoriesByCategory" />
+                    <marker date="1559552917000" expanded="true" signature="1488:1630" ph="getStoriesByCategory...{&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;&#9;likes&#10;&#9;&#9;&#9;author&#10;&#9;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="1509:1530" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="1510:1518" ph="category...category" />
+                    <marker date="1559552917000" expanded="true" signature="1531:1630" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="1536:1538" ph="id...id" />
+                    <marker date="1559552917000" expanded="true" signature="1542:1547" ph="title...title" />
+                    <marker date="1559552917000" expanded="true" signature="1551:1559" ph="imageUrl...imageUrl" />
+                    <marker date="1559552917000" expanded="true" signature="1563:1574" ph="description...description" />
+                    <marker date="1559552917000" expanded="true" signature="1578:1586" ph="category...category" />
+                    <marker date="1559552917000" expanded="true" signature="1590:1594" ph="text...text" />
+                    <marker date="1559552917000" expanded="true" signature="1598:1607" ph="createdAt...createdAt" />
+                    <marker date="1559552917000" expanded="true" signature="1611:1616" ph="likes...likes" />
+                    <marker date="1559552917000" expanded="true" signature="1620:1626" ph="author...author" />
+                    <marker date="1559552917000" expanded="true" signature="1673:1865" ph="query...{&#10;&#9;&#9;searchStories(searchText: $searchText) {&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;&#9;likes&#10;&#9;&#9;&#9;author&#10;&#9;&#9;}&#10;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="1679:1697" ph="searchStoriesQuery...searchStoriesQuery" />
+                    <marker date="1559552917000" expanded="true" signature="1698:1719" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="1712:1718" ph="String...String" />
+                    <marker date="1559552917000" expanded="true" signature="1720:1865" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="1724:1737" ph="searchStories...searchStories" />
+                    <marker date="1559552917000" expanded="true" signature="1724:1862" ph="searchStories...{&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;&#9;likes&#10;&#9;&#9;&#9;author&#10;&#9;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="1737:1762" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="1738:1748" ph="searchText...searchText" />
+                    <marker date="1559552917000" expanded="true" signature="1763:1862" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="1768:1770" ph="id...id" />
+                    <marker date="1559552917000" expanded="true" signature="1774:1779" ph="title...title" />
+                    <marker date="1559552917000" expanded="true" signature="1783:1791" ph="imageUrl...imageUrl" />
+                    <marker date="1559552917000" expanded="true" signature="1795:1806" ph="description...description" />
+                    <marker date="1559552917000" expanded="true" signature="1810:1818" ph="category...category" />
+                    <marker date="1559552917000" expanded="true" signature="1822:1826" ph="text...text" />
+                    <marker date="1559552917000" expanded="true" signature="1830:1839" ph="createdAt...createdAt" />
+                    <marker date="1559552917000" expanded="true" signature="1843:1848" ph="likes...likes" />
+                    <marker date="1559552917000" expanded="true" signature="1852:1858" ph="author...author" />
+                    <marker date="1559552917000" expanded="true" signature="1903:2253" ph="mutation...{&#10;            addEntry (&#9;id: $id,&#10;                        date: $date,&#10;                        coin: $coin,&#10;                        amount: $amount ) {&#10;                id&#10;                date&#10;                coin&#10;                amount&#10;            }&#10;        }" />
+                    <marker date="1559552917000" expanded="true" signature="1912:1928" ph="addEntryMutation...addEntryMutation" />
+                    <marker date="1559552917000" expanded="true" signature="1928:1993" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="1935:1941" ph="String...String" />
+                    <marker date="1559552917000" expanded="true" signature="1951:1957" ph="String...String" />
+                    <marker date="1559552917000" expanded="true" signature="1967:1973" ph="String...String" />
+                    <marker date="1559552917000" expanded="true" signature="1985:1990" ph="Float...Float" />
+                    <marker date="1559552917000" expanded="true" signature="1994:2253" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="2008:2016" ph="addEntry...addEntry" />
+                    <marker date="1559552917000" expanded="true" signature="2008:2243" ph="addEntry...{&#10;                id&#10;                date&#10;                coin&#10;                amount&#10;            }" />
+                    <marker date="1559552917000" expanded="true" signature="2017:2143" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="2019:2021" ph="id...id" />
+                    <marker date="1559552917000" expanded="true" signature="2052:2056" ph="date...date" />
+                    <marker date="1559552917000" expanded="true" signature="2089:2093" ph="coin...coin" />
+                    <marker date="1559552917000" expanded="true" signature="2126:2132" ph="amount...amount" />
+                    <marker date="1559552917000" expanded="true" signature="2144:2243" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="2162:2164" ph="id...id" />
+                    <marker date="1559552917000" expanded="true" signature="2181:2185" ph="date...date" />
+                    <marker date="1559552917000" expanded="true" signature="2202:2206" ph="coin...coin" />
+                    <marker date="1559552917000" expanded="true" signature="2223:2229" ph="amount...amount" />
+                    <marker date="1559552917000" expanded="true" signature="2288:2669" ph="mutation...{&#10;&#9;&#9;addStory (&#9;title: $title,&#10;&#9;&#9;&#9;&#9;&#9;description: $description,&#10;&#9;&#9;&#9;&#9;&#9;text: $text,&#10;&#9;&#9;&#9;&#9;&#9;imageUrl: $imageUrl,&#10;&#9;&#9;&#9;&#9;&#9;category: $category ) {&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;author&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;}&#10;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="2297:2313" ph="addStoryMutation...addStoryMutation" />
+                    <marker date="1559552917000" expanded="true" signature="2313:2442" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="2328:2334" ph="String...String" />
+                    <marker date="1559552917000" expanded="true" signature="2354:2360" ph="String...String" />
+                    <marker date="1559552917000" expanded="true" signature="2383:2389" ph="String...String" />
+                    <marker date="1559552917000" expanded="true" signature="2404:2410" ph="String...String" />
+                    <marker date="1559552917000" expanded="true" signature="2429:2435" ph="String...String" />
+                    <marker date="1559552917000" expanded="true" signature="2443:2669" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="2447:2455" ph="addStory...addStory" />
+                    <marker date="1559552917000" expanded="true" signature="2447:2666" ph="addStory...{&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;author&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="2456:2575" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="2458:2463" ph="title...title" />
+                    <marker date="1559552917000" expanded="true" signature="2478:2489" ph="description...description" />
+                    <marker date="1559552917000" expanded="true" signature="2510:2514" ph="text...text" />
+                    <marker date="1559552917000" expanded="true" signature="2528:2536" ph="imageUrl...imageUrl" />
+                    <marker date="1559552917000" expanded="true" signature="2554:2562" ph="category...category" />
+                    <marker date="1559552917000" expanded="true" signature="2576:2666" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="2581:2583" ph="id...id" />
+                    <marker date="1559552917000" expanded="true" signature="2587:2592" ph="title...title" />
+                    <marker date="1559552917000" expanded="true" signature="2596:2607" ph="description...description" />
+                    <marker date="1559552917000" expanded="true" signature="2611:2619" ph="imageUrl...imageUrl" />
+                    <marker date="1559552917000" expanded="true" signature="2623:2631" ph="category...category" />
+                    <marker date="1559552917000" expanded="true" signature="2635:2639" ph="text...text" />
+                    <marker date="1559552917000" expanded="true" signature="2643:2649" ph="author...author" />
+                    <marker date="1559552917000" expanded="true" signature="2653:2662" ph="createdAt...createdAt" />
+                    <marker date="1559552917000" expanded="true" signature="2707:2866" ph="mutation...{&#10;&#9;&#9;deleteStory (id: $id) {&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;author&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;}&#10;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="2716:2735" ph="deleteStoryMutation...deleteStoryMutation" />
+                    <marker date="1559552917000" expanded="true" signature="2736:2746" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="2742:2744" ph="ID...ID" />
+                    <marker date="1559552917000" expanded="true" signature="2747:2866" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="2751:2762" ph="deleteStory...deleteStory" />
+                    <marker date="1559552917000" expanded="true" signature="2751:2863" ph="deleteStory...{&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;author&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="2763:2772" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="2764:2766" ph="id...id" />
+                    <marker date="1559552917000" expanded="true" signature="2773:2863" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="2778:2780" ph="id...id" />
+                    <marker date="1559552917000" expanded="true" signature="2784:2789" ph="title...title" />
+                    <marker date="1559552917000" expanded="true" signature="2793:2804" ph="description...description" />
+                    <marker date="1559552917000" expanded="true" signature="2808:2816" ph="imageUrl...imageUrl" />
+                    <marker date="1559552917000" expanded="true" signature="2820:2828" ph="category...category" />
+                    <marker date="1559552917000" expanded="true" signature="2832:2836" ph="text...text" />
+                    <marker date="1559552917000" expanded="true" signature="2840:2846" ph="author...author" />
+                    <marker date="1559552917000" expanded="true" signature="2850:2859" ph="createdAt...createdAt" />
+                    <marker date="1559552917000" expanded="true" signature="2903:3057" ph="mutation...{&#10;&#9;&#9;likeStory (id: $id) {&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;&#9;likes&#10;&#9;&#9;}&#10;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="2912:2929" ph="likeStoryMutation...likeStoryMutation" />
+                    <marker date="1559552917000" expanded="true" signature="2930:2940" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="2936:2938" ph="ID...ID" />
+                    <marker date="1559552917000" expanded="true" signature="2941:3057" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="2945:2954" ph="likeStory...likeStory" />
+                    <marker date="1559552917000" expanded="true" signature="2945:3054" ph="likeStory...{&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;&#9;likes&#10;&#9;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="2955:2964" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="2956:2958" ph="id...id" />
+                    <marker date="1559552917000" expanded="true" signature="2965:3054" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="2970:2972" ph="id...id" />
+                    <marker date="1559552917000" expanded="true" signature="2976:2981" ph="title...title" />
+                    <marker date="1559552917000" expanded="true" signature="2985:2993" ph="imageUrl...imageUrl" />
+                    <marker date="1559552917000" expanded="true" signature="2997:3008" ph="description...description" />
+                    <marker date="1559552917000" expanded="true" signature="3012:3020" ph="category...category" />
+                    <marker date="1559552917000" expanded="true" signature="3024:3028" ph="text...text" />
+                    <marker date="1559552917000" expanded="true" signature="3032:3041" ph="createdAt...createdAt" />
+                    <marker date="1559552917000" expanded="true" signature="3045:3050" ph="likes...likes" />
+                    <marker date="1559552917000" expanded="true" signature="3095:3253" ph="mutation...{&#10;&#9;&#9;unlikeStory (id: $id) {&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;&#9;likes&#10;&#9;&#9;}&#10;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="3104:3123" ph="unlikeStoryMutation...unlikeStoryMutation" />
+                    <marker date="1559552917000" expanded="true" signature="3124:3134" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="3130:3132" ph="ID...ID" />
+                    <marker date="1559552917000" expanded="true" signature="3135:3253" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="3139:3150" ph="unlikeStory...unlikeStory" />
+                    <marker date="1559552917000" expanded="true" signature="3139:3250" ph="unlikeStory...{&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;&#9;likes&#10;&#9;&#9;}" />
+                    <marker date="1559552917000" expanded="true" signature="3151:3160" ph="(...)" />
+                    <marker date="1559552917000" expanded="true" signature="3152:3154" ph="id...id" />
+                    <marker date="1559552917000" expanded="true" signature="3161:3250" ph="{...}" />
+                    <marker date="1559552917000" expanded="true" signature="3166:3168" ph="id...id" />
+                    <marker date="1559552917000" expanded="true" signature="3172:3177" ph="title...title" />
+                    <marker date="1559552917000" expanded="true" signature="3181:3189" ph="imageUrl...imageUrl" />
+                    <marker date="1559552917000" expanded="true" signature="3193:3204" ph="description...description" />
+                    <marker date="1559552917000" expanded="true" signature="3208:3216" ph="category...category" />
+                    <marker date="1559552917000" expanded="true" signature="3220:3224" ph="text...text" />
+                    <marker date="1559552917000" expanded="true" signature="3228:3237" ph="createdAt...createdAt" />
+                    <marker date="1559552917000" expanded="true" signature="3241:3246" ph="likes...likes" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UserEntries.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/client/components/Profile/UserEntries.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="addEntry.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/client/components/Story/addEntry.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+                  <folding>
+                    <element signature="e#0#48#0" expanded="true" />
+                    <element signature="e#1079#1871#0" expanded="false" />
+                    <element signature="e#1912#1965#0" expanded="false" />
+                    <element signature="e#2562#3001#0" expanded="false" />
+                    <element signature="e#3059#3316#0" expanded="false" />
+                    <element signature="e#3338#3603#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="User.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/server/models/User.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="255">
+                  <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="resolvers.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/server/resolvers.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1455">
+                  <caret line="146" column="17" lean-forward="false" selection-start-line="146" selection-start-column="8" selection-end-line="146" selection-end-column="17" />
+                  <folding>
+                    <element signature="e#766#951#0" expanded="false" />
+                    <element signature="e#957#1124#0" expanded="false" />
+                    <element signature="e#1269#1333#0" expanded="false" />
+                    <element signature="e#1394#1481#0" expanded="false" />
+                    <element signature="e#1716#2033#0" expanded="false" />
+                    <element signature="e#1734#1937#0" expanded="false" />
+                    <element signature="e#1952#2023#0" expanded="false" />
+                    <element signature="e#2097#2587#0" expanded="false" />
+                    <element signature="e#2151#2365#0" expanded="false" />
+                    <element signature="e#2196#2264#0" expanded="false" />
+                    <element signature="e#2371#2550#0" expanded="false" />
+                    <element signature="e#2848#2935#0" expanded="false" />
+                    <element signature="e#4060#4123#0" expanded="false" />
+                    <element signature="e#4200#4266#0" expanded="false" />
+                    <element signature="e#4362#4436#0" expanded="false" />
+                    <element signature="e#4643#4706#0" expanded="false" />
+                    <element signature="e#5321#5954#0" expanded="false" />
+                    <element signature="e#5353#5416#0" expanded="false" />
+                    <element signature="e#5434#5883#0" expanded="false" />
+                    <element signature="e#5896#5944#0" expanded="false" />
+                    <element signature="e#6029#6794#0" expanded="false" />
+                    <element signature="e#6148#6216#0" expanded="false" />
+                    <element signature="e#6445#6549#0" expanded="false" />
+                    <element signature="e#6862#7592#0" expanded="false" />
+                    <element signature="e#6982#7047#0" expanded="false" />
+                    <element signature="e#7202#7269#0" expanded="false" />
+                    <element signature="e#7365#7432#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="schema.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/server/schema.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="735">
+                  <caret line="49" column="22" lean-forward="true" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="resolvers.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/server/resolvers.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="47" column="22" lean-forward="false" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="22" />
+                  <folding>
+                    <element signature="e#176#595#0" expanded="false" />
+                    <element signature="e#649#1343#0" expanded="false" />
+                    <element signature="e#1394#1481#0" expanded="false" />
+                    <element signature="e#1716#2033#0" expanded="false" />
+                    <element signature="e#1734#1937#0" expanded="false" />
+                    <element signature="e#1952#2023#0" expanded="false" />
+                    <element signature="e#2097#2587#0" expanded="false" />
+                    <element signature="e#2151#2365#0" expanded="false" />
+                    <element signature="e#2196#2264#0" expanded="false" />
+                    <element signature="e#2371#2550#0" expanded="false" />
+                    <element signature="e#2848#2935#0" expanded="false" />
+                    <element signature="e#4060#4123#0" expanded="false" />
+                    <element signature="e#4200#4266#0" expanded="false" />
+                    <element signature="e#4362#4436#0" expanded="false" />
+                    <element signature="e#4643#4706#0" expanded="false" />
+                    <element signature="e#5321#5954#0" expanded="false" />
+                    <element signature="e#5353#5416#0" expanded="false" />
+                    <element signature="e#5434#5883#0" expanded="false" />
+                    <element signature="e#5896#5944#0" expanded="false" />
+                    <element signature="e#6029#6794#0" expanded="false" />
+                    <element signature="e#6148#6216#0" expanded="false" />
+                    <element signature="e#6445#6549#0" expanded="false" />
+                    <element signature="e#6862#7592#0" expanded="false" />
+                    <element signature="e#6982#7047#0" expanded="false" />
+                    <element signature="e#7202#7269#0" expanded="false" />
+                    <element signature="e#7365#7432#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="User.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/server/models/User.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="20" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Home.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/client/components/Home.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="45">
+                  <caret line="3" column="36" lean-forward="false" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AddStory.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/client/components/Story/AddStory.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="197">
+                  <caret line="70" column="32" lean-forward="false" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UserStories.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/client/components/Profile/UserStories.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                  <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/client/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LikeStory.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/client/components/Story/LikeStory.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="645">
+                  <caret line="43" column="59" lean-forward="false" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
+                  <folding>
+                    <element signature="e#0#40#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ADD_ENTRY</find>
+      <find>apollo-cache-inmemory</find>
+      <find>refetchQueries</find>
+      <find>amount</find>
+      <find>addEntry</find>
+      <find>addstory</find>
+      <find>coin</find>
+      <find>id:Int!</find>
+      <find>staticContext</find>
+      <find>addStory</find>
+      <find>600</find>
+      <find>fetch</find>
+      <find>node</find>
+      <find>js-graphql-language-service.dist</find>
+      <find>favorite</find>
+      <find>addToSet</find>
+      <find>ApolloClient</find>
+      <find>favorites</find>
+      <find>likeStory</find>
+      <find>root</find>
+      <find>PageInfo</find>
+      <find>LikeStory</find>
+      <find>$addToSet</find>
+      <find>arguments</find>
+      <find>deleteStory</find>
+      <find>getCurrentUser</find>
+      <find>getFeed</find>
+      <find>cursor</find>
+      <find>GET_USER_STORIES</find>
+      <find>getUserStories</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>String!</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Table.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/MainTable.js" />
+        <option value="$PROJECT_DIR$/src/App.scss" />
+        <option value="$PROJECT_DIR$/src/MainTable.scss" />
+        <option value="$PROJECT_DIR$/.eslintrc.json" />
+        <option value="$PROJECT_DIR$/src/server/.env" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/client/components/Profile/UserInfo.js" />
+        <option value="$PROJECT_DIR$/src/server/models/Story.js" />
+        <option value="$PROJECT_DIR$/src/server/models/User.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/client/styles/date-picker.scss" />
+        <option value="$PROJECT_DIR$/src/server/models/Entry.js" />
+        <option value="$PROJECT_DIR$/src/client/components/Story/AddStory.js" />
+        <option value="$PROJECT_DIR$/src/server/server.js" />
+        <option value="$PROJECT_DIR$/src/client/components/CoinsSelectBox.js" />
+        <option value="$PROJECT_DIR$/src/client/components/CoinSelector.js" />
+        <option value="$PROJECT_DIR$/graphql.config.json" />
+        <option value="$PROJECT_DIR$/graphql.schema.json" />
+        <option value="$PROJECT_DIR$/src/client/index.js" />
+        <option value="$PROJECT_DIR$/src/client/components/Story/addEntry.js" />
+        <option value="$PROJECT_DIR$/src/server/schema.js" />
+        <option value="$PROJECT_DIR$/src/server/resolvers.js" />
+        <option value="$PROJECT_DIR$/src/client/queries/index.js" />
+        <option value="$PROJECT_DIR$/src/client/components/Home.js" />
+        <option value="$PROJECT_DIR$/src/client/components/Profile/UserEntries.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <exe-path>/usr/local/bin/bower</exe-path>
+    <config-path />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+    <handled-path value="$PROJECT_DIR$/src/server/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="15" />
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="1002" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CSS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="profit-calculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="profit-calculator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="profit-calculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="profit-calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="profit-calculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="profit-calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="profit-calculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="profit-calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="profit-calculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="profit-calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="profit-calculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="profit-calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Profile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="profit-calculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="profit-calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Story" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="profit-calculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="profit-calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="queries" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="profit-calculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="profit-calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="profit-calculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="profit-calculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="profit-calculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GraphQL Schemas" type="390a5855:JSGraphQLSchemaDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v12.0.0/bin/node" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="node.js.path.for.package.eslint" value="$USER_HOME$/.nvm/versions/node/v6.12.0/bin/node" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="node.js.path.for.package.standard" value="$USER_HOME$/.nvm/versions/node/v6.12.0/bin/node" />
+    <property name="node.js.selected.package.standard" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="node.js.selected.package.jscs" value="" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="Feed&#9;null&#9;null&#10;addE&#9;FILE&#9;file:///Users/niv.zilberman/CRA/profit-calculator/src/client/components/Story/addEntry.js" />
+    <property name="com.intellij.lang.jsgraphql.ide.injection.JSGraphQLLanguageInjectionUtil.gql" value="apollo" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="$USER_HOME$/.nvm/versions/node/v12.0.0/bin/node" working-dir="">
+      <EXTENSION ID="com.jetbrains.nodejs.remote.docker.NodeJSDockerRunConfigurationExtension">
+        <option name="envVars">
+          <list />
+        </option>
+        <option name="extraHosts">
+          <list />
+        </option>
+        <option name="links">
+          <list />
+        </option>
+        <option name="networkDisabled" value="false" />
+        <option name="networkMode" value="bridge" />
+        <option name="portBindings">
+          <list />
+        </option>
+        <option name="publishAllPorts" value="false" />
+        <option name="version" value="1" />
+        <option name="volumeBindings">
+          <list />
+        </option>
+      </EXTENSION>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c5260c51-8a09-4ef1-b9b5-75d3110b6677" name="Default" comment="" />
+      <created>1558864872101</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558864872101</updated>
+      <workItem from="1558864879844" duration="4214000" />
+      <workItem from="1558938457016" duration="309000" />
+      <workItem from="1558939121260" duration="39480000" />
+      <workItem from="1559111963505" duration="650000" />
+      <workItem from="1559112638589" duration="3660000" />
+      <workItem from="1559470865469" duration="773000" />
+      <workItem from="1559471923775" duration="181000" />
+      <workItem from="1559472159855" duration="14580000" />
+      <workItem from="1559552056085" duration="1796000" />
+    </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1558940593548</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558940593549</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="65643000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1920" height="1002" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960506" sideWeight="0.44350758" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="GraphQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57579184" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960506" sideWeight="0.5564924" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29977375" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/App.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainTable.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-grid-layout/css/styles.css" />
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="40" lean-forward="false" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc.json" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/package-lock.json" />
+    <entry file="file://$PROJECT_DIR$/build/precache-manifest.5fca6a2a5db2b814ebd9db9de622988c.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/static/js/2.8855cb15.chunk.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/static/js/main.f078d29b.chunk.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="47" lean-forward="false" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/service-worker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1958" lean-forward="false" selection-start-line="0" selection-start-column="1958" selection-end-line="0" selection-end-column="1958" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/components/Profile/UserInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="31" column="2" lean-forward="false" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/components/Profile/UserProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/components/Navbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/components/withAuth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/components/withSession.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainTable.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="30" lean-forward="false" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="48" column="27" lean-forward="true" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/styles/date-picker.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1515">
+          <caret line="102" column="2" lean-forward="false" selection-start-line="102" selection-start-column="2" selection-end-line="102" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/components/CoinSelector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphql.config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schema.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="18" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="2098" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphql.schema.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="2098" column="1" lean-forward="false" selection-start-line="2098" selection-start-column="1" selection-end-line="2098" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/components/Story/StoryCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/models/Story.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="31" column="14" lean-forward="false" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/models/Entry.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/components/Story/StoryPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="38" column="44" lean-forward="true" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/components/Story/LikeStory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="77" column="52" lean-forward="false" selection-start-line="77" selection-start-column="52" selection-end-line="77" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/models/User.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="6" lean-forward="false" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/components/Story/addEntry.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#1079#1871#0" expanded="false" />
+            <element signature="e#1912#1965#0" expanded="false" />
+            <element signature="e#2562#3001#0" expanded="false" />
+            <element signature="e#3059#3316#0" expanded="false" />
+            <element signature="e#3338#3603#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="22" lean-forward="true" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/components/Story/AddStory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="70" column="32" lean-forward="false" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/resolvers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1455">
+          <caret line="146" column="17" lean-forward="false" selection-start-line="146" selection-start-column="8" selection-end-line="146" selection-end-column="17" />
+          <folding>
+            <element signature="e#766#951#0" expanded="false" />
+            <element signature="e#957#1124#0" expanded="false" />
+            <element signature="e#1269#1333#0" expanded="false" />
+            <element signature="e#1394#1481#0" expanded="false" />
+            <element signature="e#1716#2033#0" expanded="false" />
+            <element signature="e#1734#1937#0" expanded="false" />
+            <element signature="e#1952#2023#0" expanded="false" />
+            <element signature="e#2097#2587#0" expanded="false" />
+            <element signature="e#2151#2365#0" expanded="false" />
+            <element signature="e#2196#2264#0" expanded="false" />
+            <element signature="e#2371#2550#0" expanded="false" />
+            <element signature="e#2848#2935#0" expanded="false" />
+            <element signature="e#4060#4123#0" expanded="false" />
+            <element signature="e#4200#4266#0" expanded="false" />
+            <element signature="e#4362#4436#0" expanded="false" />
+            <element signature="e#4643#4706#0" expanded="false" />
+            <element signature="e#5321#5954#0" expanded="false" />
+            <element signature="e#5353#5416#0" expanded="false" />
+            <element signature="e#5434#5883#0" expanded="false" />
+            <element signature="e#5896#5944#0" expanded="false" />
+            <element signature="e#6029#6794#0" expanded="false" />
+            <element signature="e#6148#6216#0" expanded="false" />
+            <element signature="e#6445#6549#0" expanded="false" />
+            <element signature="e#6862#7592#0" expanded="false" />
+            <element signature="e#6982#7047#0" expanded="false" />
+            <element signature="e#7202#7269#0" expanded="false" />
+            <element signature="e#7365#7432#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/components/Profile/UserStories.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="15" lean-forward="true" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/components/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="36" lean-forward="false" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/queries/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="72" column="22" lean-forward="false" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="22" />
+          <folding>
+            <marker date="1559552917000" expanded="true" signature="64:231" ph="mutation...{&#10;&#9;&#9;signupUser (username: $username, email: $email, password: $password) {&#10;&#9;&#9;&#9;token&#10;&#9;&#9;}&#10;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="73:83" ph="signupUser...signupUser" />
+            <marker date="1559552917000" expanded="true" signature="83:140" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="95:101" ph="String...String" />
+            <marker date="1559552917000" expanded="true" signature="112:118" ph="String...String" />
+            <marker date="1559552917000" expanded="true" signature="132:138" ph="String...String" />
+            <marker date="1559552917000" expanded="true" signature="141:231" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="145:155" ph="signupUser...signupUser" />
+            <marker date="1559552917000" expanded="true" signature="145:228" ph="signupUser...{&#10;&#9;&#9;&#9;token&#10;&#9;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="156:213" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="157:165" ph="username...username" />
+            <marker date="1559552917000" expanded="true" signature="178:183" ph="email...email" />
+            <marker date="1559552917000" expanded="true" signature="193:201" ph="password...password" />
+            <marker date="1559552917000" expanded="true" signature="214:228" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="219:224" ph="token...token" />
+            <marker date="1559552917000" expanded="true" signature="268:403" ph="mutation...{&#10;&#9;&#9;signinUser (username: $username, password: $password) {&#10;&#9;&#9;&#9;token&#10;&#9;&#9;}&#10;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="277:287" ph="signinUser...signinUser" />
+            <marker date="1559552917000" expanded="true" signature="287:327" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="299:305" ph="String...String" />
+            <marker date="1559552917000" expanded="true" signature="319:325" ph="String...String" />
+            <marker date="1559552917000" expanded="true" signature="328:403" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="332:342" ph="signinUser...signinUser" />
+            <marker date="1559552917000" expanded="true" signature="332:400" ph="signinUser...{&#10;&#9;&#9;&#9;token&#10;&#9;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="343:385" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="344:352" ph="username...username" />
+            <marker date="1559552917000" expanded="true" signature="365:373" ph="password...password" />
+            <marker date="1559552917000" expanded="true" signature="386:400" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="391:396" ph="token...token" />
+            <marker date="1559552917000" expanded="true" signature="445:604" ph="query...{&#10;&#9;&#9;getCurrentUser {&#10;&#9;&#9;&#9;email&#10;&#9;&#9;&#9;username&#10;&#9;&#9;&#9;favorites {&#10;&#9;&#9;&#9;&#9;id &#10;&#9;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;}&#10;&#9;&#9;}&#10;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="451:465" ph="getCurrentUser...getCurrentUser" />
+            <marker date="1559552917000" expanded="true" signature="466:604" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="470:484" ph="getCurrentUser...getCurrentUser" />
+            <marker date="1559552917000" expanded="true" signature="470:601" ph="getCurrentUser...{&#10;&#9;&#9;&#9;email&#10;&#9;&#9;&#9;username&#10;&#9;&#9;&#9;favorites {&#10;&#9;&#9;&#9;&#9;id &#10;&#9;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;}&#10;&#9;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="485:601" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="490:495" ph="email...email" />
+            <marker date="1559552917000" expanded="true" signature="499:507" ph="username...username" />
+            <marker date="1559552917000" expanded="true" signature="511:520" ph="favorites...favorites" />
+            <marker date="1559552917000" expanded="true" signature="511:544" ph="favorites...{&#10;&#9;&#9;&#9;&#9;id &#10;&#9;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="521:544" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="527:529" ph="id...id" />
+            <marker date="1559552917000" expanded="true" signature="534:539" ph="title...title" />
+            <marker date="1559552917000" expanded="true" signature="548:555" ph="entries...entries" />
+            <marker date="1559552917000" expanded="true" signature="548:597" ph="entries...{&#10;&#9;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;&#9;date&#10;&#9;&#9;&#9;&#9;coin&#10;&#9;&#9;&#9;&#9;amount&#10;&#9;&#9;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="555:597" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="561:563" ph="id...id" />
+            <marker date="1559552917000" expanded="true" signature="568:572" ph="date...date" />
+            <marker date="1559552917000" expanded="true" signature="577:581" ph="coin...coin" />
+            <marker date="1559552917000" expanded="true" signature="586:592" ph="amount...amount" />
+            <marker date="1559552917000" expanded="true" signature="638:809" ph="query...{&#10;&#9;&#9;getFeed (cursor: $cursor) {&#10;&#9;&#9;&#9;cursor&#10;&#9;&#9;&#9;stories {&#10;&#9;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;&#9;likes&#10;&#9;&#9;&#9;&#9;author&#10;&#9;&#9;&#9;}&#10;&#9;&#9;}&#10;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="644:656" ph="getFeedQuery...getFeedQuery" />
+            <marker date="1559552917000" expanded="true" signature="657:674" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="667:673" ph="String...String" />
+            <marker date="1559552917000" expanded="true" signature="675:809" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="679:686" ph="getFeed...getFeed" />
+            <marker date="1559552917000" expanded="true" signature="679:806" ph="getFeed...{&#10;&#9;&#9;&#9;cursor&#10;&#9;&#9;&#9;stories {&#10;&#9;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;&#9;likes&#10;&#9;&#9;&#9;&#9;author&#10;&#9;&#9;&#9;}&#10;&#9;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="687:704" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="688:694" ph="cursor...cursor" />
+            <marker date="1559552917000" expanded="true" signature="705:806" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="710:716" ph="cursor...cursor" />
+            <marker date="1559552917000" expanded="true" signature="720:727" ph="stories...stories" />
+            <marker date="1559552917000" expanded="true" signature="720:798" ph="stories...{&#10;&#9;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;&#9;likes&#10;&#9;&#9;&#9;&#9;author&#10;&#9;&#9;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="728:798" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="734:736" ph="id...id" />
+            <marker date="1559552917000" expanded="true" signature="741:746" ph="title...title" />
+            <marker date="1559552917000" expanded="true" signature="751:759" ph="imageUrl...imageUrl" />
+            <marker date="1559552917000" expanded="true" signature="764:772" ph="category...category" />
+            <marker date="1559552917000" expanded="true" signature="777:782" ph="likes...likes" />
+            <marker date="1559552917000" expanded="true" signature="787:793" ph="author...author" />
+            <marker date="1559552917000" expanded="true" signature="845:991" ph="query...{&#10;&#9;&#9;getStory (id: $id) {&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;&#9;likes&#10;&#9;&#9;}&#10;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="851:864" ph="getStoryQuery...getStoryQuery" />
+            <marker date="1559552917000" expanded="true" signature="865:875" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="871:873" ph="ID...ID" />
+            <marker date="1559552917000" expanded="true" signature="876:991" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="880:888" ph="getStory...getStory" />
+            <marker date="1559552917000" expanded="true" signature="880:988" ph="getStory...{&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;&#9;likes&#10;&#9;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="889:898" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="890:892" ph="id...id" />
+            <marker date="1559552917000" expanded="true" signature="899:988" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="904:906" ph="id...id" />
+            <marker date="1559552917000" expanded="true" signature="910:915" ph="title...title" />
+            <marker date="1559552917000" expanded="true" signature="919:927" ph="imageUrl...imageUrl" />
+            <marker date="1559552917000" expanded="true" signature="931:942" ph="description...description" />
+            <marker date="1559552917000" expanded="true" signature="946:954" ph="category...category" />
+            <marker date="1559552917000" expanded="true" signature="958:962" ph="text...text" />
+            <marker date="1559552917000" expanded="true" signature="966:975" ph="createdAt...createdAt" />
+            <marker date="1559552917000" expanded="true" signature="979:984" ph="likes...likes" />
+            <marker date="1559552917000" expanded="true" signature="1033:1218" ph="query...{&#10;&#9;&#9;getUserStories (username: $username) {&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;&#9;likes&#10;&#9;&#9;&#9;author&#10;&#9;&#9;}&#10;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="1039:1053" ph="getUserStories...getUserStories" />
+            <marker date="1559552917000" expanded="true" signature="1054:1074" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="1066:1072" ph="String...String" />
+            <marker date="1559552917000" expanded="true" signature="1075:1218" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="1079:1093" ph="getUserStories...getUserStories" />
+            <marker date="1559552917000" expanded="true" signature="1079:1215" ph="getUserStories...{&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;&#9;likes&#10;&#9;&#9;&#9;author&#10;&#9;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="1094:1115" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="1095:1103" ph="username...username" />
+            <marker date="1559552917000" expanded="true" signature="1116:1215" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="1121:1123" ph="id...id" />
+            <marker date="1559552917000" expanded="true" signature="1127:1132" ph="title...title" />
+            <marker date="1559552917000" expanded="true" signature="1136:1144" ph="imageUrl...imageUrl" />
+            <marker date="1559552917000" expanded="true" signature="1148:1159" ph="description...description" />
+            <marker date="1559552917000" expanded="true" signature="1163:1171" ph="category...category" />
+            <marker date="1559552917000" expanded="true" signature="1175:1179" ph="text...text" />
+            <marker date="1559552917000" expanded="true" signature="1183:1192" ph="createdAt...createdAt" />
+            <marker date="1559552917000" expanded="true" signature="1196:1201" ph="likes...likes" />
+            <marker date="1559552917000" expanded="true" signature="1205:1211" ph="author...author" />
+            <marker date="1559552917000" expanded="true" signature="1260:1381" ph="query...{&#10;&#9;&#9;getUserEntries (username: $username){&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;date&#10;&#9;&#9;&#9;coin&#10;&#9;&#9;&#9;amount&#10;&#9;&#9;}&#10;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="1266:1280" ph="getUserEntries...getUserEntries" />
+            <marker date="1559552917000" expanded="true" signature="1281:1301" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="1293:1299" ph="String...String" />
+            <marker date="1559552917000" expanded="true" signature="1301:1381" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="1305:1319" ph="getUserEntries...getUserEntries" />
+            <marker date="1559552917000" expanded="true" signature="1305:1378" ph="getUserEntries...{&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;date&#10;&#9;&#9;&#9;coin&#10;&#9;&#9;&#9;amount&#10;&#9;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="1320:1341" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="1321:1329" ph="username...username" />
+            <marker date="1559552917000" expanded="true" signature="1341:1378" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="1346:1348" ph="id...id" />
+            <marker date="1559552917000" expanded="true" signature="1352:1356" ph="date...date" />
+            <marker date="1559552917000" expanded="true" signature="1360:1364" ph="coin...coin" />
+            <marker date="1559552917000" expanded="true" signature="1368:1374" ph="amount...amount" />
+            <marker date="1559552917000" expanded="true" signature="1431:1633" ph="query...{&#10;&#9;&#9;getStoriesByCategory (category: $category) {&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;&#9;likes&#10;&#9;&#9;&#9;author&#10;&#9;&#9;}&#10;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="1437:1462" ph="getStoriesByCategoryQuery...getStoriesByCategoryQuery" />
+            <marker date="1559552917000" expanded="true" signature="1463:1483" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="1475:1481" ph="String...String" />
+            <marker date="1559552917000" expanded="true" signature="1484:1633" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="1488:1508" ph="getStoriesByCategory...getStoriesByCategory" />
+            <marker date="1559552917000" expanded="true" signature="1488:1630" ph="getStoriesByCategory...{&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;&#9;likes&#10;&#9;&#9;&#9;author&#10;&#9;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="1509:1530" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="1510:1518" ph="category...category" />
+            <marker date="1559552917000" expanded="true" signature="1531:1630" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="1536:1538" ph="id...id" />
+            <marker date="1559552917000" expanded="true" signature="1542:1547" ph="title...title" />
+            <marker date="1559552917000" expanded="true" signature="1551:1559" ph="imageUrl...imageUrl" />
+            <marker date="1559552917000" expanded="true" signature="1563:1574" ph="description...description" />
+            <marker date="1559552917000" expanded="true" signature="1578:1586" ph="category...category" />
+            <marker date="1559552917000" expanded="true" signature="1590:1594" ph="text...text" />
+            <marker date="1559552917000" expanded="true" signature="1598:1607" ph="createdAt...createdAt" />
+            <marker date="1559552917000" expanded="true" signature="1611:1616" ph="likes...likes" />
+            <marker date="1559552917000" expanded="true" signature="1620:1626" ph="author...author" />
+            <marker date="1559552917000" expanded="true" signature="1673:1865" ph="query...{&#10;&#9;&#9;searchStories(searchText: $searchText) {&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;&#9;likes&#10;&#9;&#9;&#9;author&#10;&#9;&#9;}&#10;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="1679:1697" ph="searchStoriesQuery...searchStoriesQuery" />
+            <marker date="1559552917000" expanded="true" signature="1698:1719" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="1712:1718" ph="String...String" />
+            <marker date="1559552917000" expanded="true" signature="1720:1865" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="1724:1737" ph="searchStories...searchStories" />
+            <marker date="1559552917000" expanded="true" signature="1724:1862" ph="searchStories...{&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;&#9;likes&#10;&#9;&#9;&#9;author&#10;&#9;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="1737:1762" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="1738:1748" ph="searchText...searchText" />
+            <marker date="1559552917000" expanded="true" signature="1763:1862" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="1768:1770" ph="id...id" />
+            <marker date="1559552917000" expanded="true" signature="1774:1779" ph="title...title" />
+            <marker date="1559552917000" expanded="true" signature="1783:1791" ph="imageUrl...imageUrl" />
+            <marker date="1559552917000" expanded="true" signature="1795:1806" ph="description...description" />
+            <marker date="1559552917000" expanded="true" signature="1810:1818" ph="category...category" />
+            <marker date="1559552917000" expanded="true" signature="1822:1826" ph="text...text" />
+            <marker date="1559552917000" expanded="true" signature="1830:1839" ph="createdAt...createdAt" />
+            <marker date="1559552917000" expanded="true" signature="1843:1848" ph="likes...likes" />
+            <marker date="1559552917000" expanded="true" signature="1852:1858" ph="author...author" />
+            <marker date="1559552917000" expanded="true" signature="1903:2253" ph="mutation...{&#10;            addEntry (&#9;id: $id,&#10;                        date: $date,&#10;                        coin: $coin,&#10;                        amount: $amount ) {&#10;                id&#10;                date&#10;                coin&#10;                amount&#10;            }&#10;        }" />
+            <marker date="1559552917000" expanded="true" signature="1912:1928" ph="addEntryMutation...addEntryMutation" />
+            <marker date="1559552917000" expanded="true" signature="1928:1993" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="1935:1941" ph="String...String" />
+            <marker date="1559552917000" expanded="true" signature="1951:1957" ph="String...String" />
+            <marker date="1559552917000" expanded="true" signature="1967:1973" ph="String...String" />
+            <marker date="1559552917000" expanded="true" signature="1985:1990" ph="Float...Float" />
+            <marker date="1559552917000" expanded="true" signature="1994:2253" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="2008:2016" ph="addEntry...addEntry" />
+            <marker date="1559552917000" expanded="true" signature="2008:2243" ph="addEntry...{&#10;                id&#10;                date&#10;                coin&#10;                amount&#10;            }" />
+            <marker date="1559552917000" expanded="true" signature="2017:2143" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="2019:2021" ph="id...id" />
+            <marker date="1559552917000" expanded="true" signature="2052:2056" ph="date...date" />
+            <marker date="1559552917000" expanded="true" signature="2089:2093" ph="coin...coin" />
+            <marker date="1559552917000" expanded="true" signature="2126:2132" ph="amount...amount" />
+            <marker date="1559552917000" expanded="true" signature="2144:2243" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="2162:2164" ph="id...id" />
+            <marker date="1559552917000" expanded="true" signature="2181:2185" ph="date...date" />
+            <marker date="1559552917000" expanded="true" signature="2202:2206" ph="coin...coin" />
+            <marker date="1559552917000" expanded="true" signature="2223:2229" ph="amount...amount" />
+            <marker date="1559552917000" expanded="true" signature="2288:2669" ph="mutation...{&#10;&#9;&#9;addStory (&#9;title: $title,&#10;&#9;&#9;&#9;&#9;&#9;description: $description,&#10;&#9;&#9;&#9;&#9;&#9;text: $text,&#10;&#9;&#9;&#9;&#9;&#9;imageUrl: $imageUrl,&#10;&#9;&#9;&#9;&#9;&#9;category: $category ) {&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;author&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;}&#10;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="2297:2313" ph="addStoryMutation...addStoryMutation" />
+            <marker date="1559552917000" expanded="true" signature="2313:2442" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="2328:2334" ph="String...String" />
+            <marker date="1559552917000" expanded="true" signature="2354:2360" ph="String...String" />
+            <marker date="1559552917000" expanded="true" signature="2383:2389" ph="String...String" />
+            <marker date="1559552917000" expanded="true" signature="2404:2410" ph="String...String" />
+            <marker date="1559552917000" expanded="true" signature="2429:2435" ph="String...String" />
+            <marker date="1559552917000" expanded="true" signature="2443:2669" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="2447:2455" ph="addStory...addStory" />
+            <marker date="1559552917000" expanded="true" signature="2447:2666" ph="addStory...{&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;author&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="2456:2575" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="2458:2463" ph="title...title" />
+            <marker date="1559552917000" expanded="true" signature="2478:2489" ph="description...description" />
+            <marker date="1559552917000" expanded="true" signature="2510:2514" ph="text...text" />
+            <marker date="1559552917000" expanded="true" signature="2528:2536" ph="imageUrl...imageUrl" />
+            <marker date="1559552917000" expanded="true" signature="2554:2562" ph="category...category" />
+            <marker date="1559552917000" expanded="true" signature="2576:2666" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="2581:2583" ph="id...id" />
+            <marker date="1559552917000" expanded="true" signature="2587:2592" ph="title...title" />
+            <marker date="1559552917000" expanded="true" signature="2596:2607" ph="description...description" />
+            <marker date="1559552917000" expanded="true" signature="2611:2619" ph="imageUrl...imageUrl" />
+            <marker date="1559552917000" expanded="true" signature="2623:2631" ph="category...category" />
+            <marker date="1559552917000" expanded="true" signature="2635:2639" ph="text...text" />
+            <marker date="1559552917000" expanded="true" signature="2643:2649" ph="author...author" />
+            <marker date="1559552917000" expanded="true" signature="2653:2662" ph="createdAt...createdAt" />
+            <marker date="1559552917000" expanded="true" signature="2707:2866" ph="mutation...{&#10;&#9;&#9;deleteStory (id: $id) {&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;author&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;}&#10;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="2716:2735" ph="deleteStoryMutation...deleteStoryMutation" />
+            <marker date="1559552917000" expanded="true" signature="2736:2746" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="2742:2744" ph="ID...ID" />
+            <marker date="1559552917000" expanded="true" signature="2747:2866" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="2751:2762" ph="deleteStory...deleteStory" />
+            <marker date="1559552917000" expanded="true" signature="2751:2863" ph="deleteStory...{&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;author&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="2763:2772" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="2764:2766" ph="id...id" />
+            <marker date="1559552917000" expanded="true" signature="2773:2863" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="2778:2780" ph="id...id" />
+            <marker date="1559552917000" expanded="true" signature="2784:2789" ph="title...title" />
+            <marker date="1559552917000" expanded="true" signature="2793:2804" ph="description...description" />
+            <marker date="1559552917000" expanded="true" signature="2808:2816" ph="imageUrl...imageUrl" />
+            <marker date="1559552917000" expanded="true" signature="2820:2828" ph="category...category" />
+            <marker date="1559552917000" expanded="true" signature="2832:2836" ph="text...text" />
+            <marker date="1559552917000" expanded="true" signature="2840:2846" ph="author...author" />
+            <marker date="1559552917000" expanded="true" signature="2850:2859" ph="createdAt...createdAt" />
+            <marker date="1559552917000" expanded="true" signature="2903:3057" ph="mutation...{&#10;&#9;&#9;likeStory (id: $id) {&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;&#9;likes&#10;&#9;&#9;}&#10;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="2912:2929" ph="likeStoryMutation...likeStoryMutation" />
+            <marker date="1559552917000" expanded="true" signature="2930:2940" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="2936:2938" ph="ID...ID" />
+            <marker date="1559552917000" expanded="true" signature="2941:3057" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="2945:2954" ph="likeStory...likeStory" />
+            <marker date="1559552917000" expanded="true" signature="2945:3054" ph="likeStory...{&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;&#9;likes&#10;&#9;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="2955:2964" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="2956:2958" ph="id...id" />
+            <marker date="1559552917000" expanded="true" signature="2965:3054" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="2970:2972" ph="id...id" />
+            <marker date="1559552917000" expanded="true" signature="2976:2981" ph="title...title" />
+            <marker date="1559552917000" expanded="true" signature="2985:2993" ph="imageUrl...imageUrl" />
+            <marker date="1559552917000" expanded="true" signature="2997:3008" ph="description...description" />
+            <marker date="1559552917000" expanded="true" signature="3012:3020" ph="category...category" />
+            <marker date="1559552917000" expanded="true" signature="3024:3028" ph="text...text" />
+            <marker date="1559552917000" expanded="true" signature="3032:3041" ph="createdAt...createdAt" />
+            <marker date="1559552917000" expanded="true" signature="3045:3050" ph="likes...likes" />
+            <marker date="1559552917000" expanded="true" signature="3095:3253" ph="mutation...{&#10;&#9;&#9;unlikeStory (id: $id) {&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;&#9;likes&#10;&#9;&#9;}&#10;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="3104:3123" ph="unlikeStoryMutation...unlikeStoryMutation" />
+            <marker date="1559552917000" expanded="true" signature="3124:3134" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="3130:3132" ph="ID...ID" />
+            <marker date="1559552917000" expanded="true" signature="3135:3253" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="3139:3150" ph="unlikeStory...unlikeStory" />
+            <marker date="1559552917000" expanded="true" signature="3139:3250" ph="unlikeStory...{&#10;&#9;&#9;&#9;id&#10;&#9;&#9;&#9;title&#10;&#9;&#9;&#9;imageUrl&#10;&#9;&#9;&#9;description&#10;&#9;&#9;&#9;category&#10;&#9;&#9;&#9;text&#10;&#9;&#9;&#9;createdAt&#10;&#9;&#9;&#9;likes&#10;&#9;&#9;}" />
+            <marker date="1559552917000" expanded="true" signature="3151:3160" ph="(...)" />
+            <marker date="1559552917000" expanded="true" signature="3152:3154" ph="id...id" />
+            <marker date="1559552917000" expanded="true" signature="3161:3250" ph="{...}" />
+            <marker date="1559552917000" expanded="true" signature="3166:3168" ph="id...id" />
+            <marker date="1559552917000" expanded="true" signature="3172:3177" ph="title...title" />
+            <marker date="1559552917000" expanded="true" signature="3181:3189" ph="imageUrl...imageUrl" />
+            <marker date="1559552917000" expanded="true" signature="3193:3204" ph="description...description" />
+            <marker date="1559552917000" expanded="true" signature="3208:3216" ph="category...category" />
+            <marker date="1559552917000" expanded="true" signature="3220:3224" ph="text...text" />
+            <marker date="1559552917000" expanded="true" signature="3228:3237" ph="createdAt...createdAt" />
+            <marker date="1559552917000" expanded="true" signature="3241:3246" ph="likes...likes" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/client/components/Profile/UserEntries.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
