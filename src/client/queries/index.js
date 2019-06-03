@@ -15,6 +15,17 @@ export const SIGNIN_USER = gql`
 		}
 	}
 `
+export const GET_COINS = gql`
+    query getCoins {
+        getCoins {
+            id
+            name
+            symbol
+            slug
+            rank
+        }
+    }
+`;
 
 export const GET_CURRENT_USER = gql`
 	query getCurrentUser {
@@ -35,6 +46,8 @@ export const GET_CURRENT_USER = gql`
 	}
 `
 
+
+
 export const GET_FEED = gql`
 	query getFeedQuery ($cursor: String) {
 		getFeed (cursor: $cursor) {
@@ -51,7 +64,6 @@ export const GET_FEED = gql`
 		}
 	}
 `
-
 
 export const GET_STORY = gql`
 	query getStoryQuery ($id: ID!) {

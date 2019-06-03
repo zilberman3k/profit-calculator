@@ -14,7 +14,7 @@ const expressPlayground = require('graphql-playground-middleware-express').defau
 const User = require('./models/User');
 const Story = require('./models/Story');
 const Entry = require('./models/Entry');
-
+const Coin = require('./models/Coin');
 // config environment
 dotenv.config();
 
@@ -51,13 +51,15 @@ const server = new ApolloServer({
 				currentUser,
 				User,
 				Story,
-				Entry
+				Entry,
+				Coin
 			}
 		} else {
 			return {
 				User,
 				Story,
-				Entry
+				Entry,
+				Coin
 			}
 		}
 	}

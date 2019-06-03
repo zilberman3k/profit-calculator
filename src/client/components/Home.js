@@ -1,8 +1,8 @@
 import React from 'react'
 import StoryCard from './Story/StoryCard'
 import { Query } from 'react-apollo'
-import { GET_FEED , GET_USER_ENTRIES} from '../queries'
-
+import { GET_FEED , GET_USER_ENTRIES,GET_CURRENT_USER} from '../queries'
+import UserEntries from './Profile/UserEntries';
 
 const Home = () => (
 	<div>
@@ -54,4 +54,21 @@ const Home = () => (
 	</div>
 )
 
-export default Home
+const Home2 = () => (
+	<div>
+		<Query query={GET_CURRENT_USER}>
+            {({ loading, error, data, fetchMore }) => {
+            	if (loading || !data || !data.getCurrentUser) return <div>Loading...</div>
+                const { entries } = data.getCurrentUser;
+                return (
+					<div className="Home">
+						<UserEntries entries={entries} />
+					</div>
+                )
+            }}
+		</Query>
+
+	</div>
+)
+
+export default Home2

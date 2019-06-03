@@ -35,7 +35,7 @@ const AuthNavbar = () => (
 			<NavLink to="/profile">Profile</NavLink>
 		</li>
 		<li className="right">
-			<NavLink to="/add-story">Add Story</NavLink>
+			<NavLink to="/add-entry">Add Entry</NavLink>
 		</li>
 	</ul>
 )

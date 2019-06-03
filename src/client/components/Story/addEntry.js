@@ -5,14 +5,13 @@ import DateTime from 'react-datetime';
 import moment from 'moment';
 import '../../styles/date-picker.scss';
 import withAuth from '../withAuth'
-import {ADD_STORY, GET_FEED, GET_USER_STORIES, ADD_ENTRY} from '../../queries'
+import {ADD_STORY, GET_FEED, GET_USER_STORIES, ADD_ENTRY,GET_CURRENT_USER} from '../../queries'
 import Error from '../Error'
 import CoinSelector from '../CoinSelector';
 
 import LikeStory from './LikeStory'
 
-
-function AddEntry({session,history}) {
+function AddEntry({session, history}) {
     const [id, setId] = useState('');
     const [date, setDate] = useState('');
     const [coin, setCoin] = useState('');
@@ -22,19 +21,10 @@ function AddEntry({session,history}) {
 
     const handleSubmit = async (e, addEntry) => {
         e.preventDefault();
-        // run the mutation
         setId(Date.now());
         const entry = await addEntry();
-        console.log(entry);
-
-        // redirect to home page
-        //history.push('/');
+        history.push('/');
     };
-
-    const addEntryToUser = async ()=>{
-
-    };
-
 
     const updateInput = (name, val) => {
         let fn = null, validateDate = false;
@@ -82,6 +72,9 @@ function AddEntry({session,history}) {
         <Mutation
             mutation={ADD_ENTRY}
             variables={{...inputs}}
+            refetchQueries={() => [
+                {query: GET_CURRENT_USER}
+            ]}
         >
             {(addEntry, {data, loading, error}) => {
 
@@ -108,6 +101,7 @@ function AddEntry({session,history}) {
                         placeholder="Coin"
                         name="coin"
                         value={coin}
+                        required
                         onChange={e => updateInput('coin', e.target.value)}
                     />
 
@@ -116,6 +110,7 @@ function AddEntry({session,history}) {
                         placeholder="Amount"
                         name="amount"
                         value={amount}
+                        required
                         onChange={e => updateInput('amount', e.target.value)}
                     />
 

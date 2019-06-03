@@ -1,8 +1,15 @@
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
-
+const axios = require('axios');
+//console.log(axios);
 exports.resolvers = {
     Query: {
+        getCoins: async () => {
+            const coins = await axios.get('https://s2.coinmarketcap.com/generated/search/quick_search.json');
+            const {data = []} = coins;
+
+            return data
+        },
         getCurrentUser: async (root, args, {currentUser, User}) => {
             // check empty currentUser
             if (!currentUser) {
@@ -13,8 +20,8 @@ exports.resolvers = {
                 .populate({
                     path: 'favorites',
                     model: 'Story'
-                }).populate({path:'entries',model:'Entry'});
-          console.log(user);
+                }).populate({path: 'entries', model: 'Entry'});
+            console.log(user);
             return user
         },
         getFeed: async (root, {cursor}, {Story}) => {
@@ -84,7 +91,7 @@ exports.resolvers = {
             amount,
         }, {currentUser, Entry, User}) => {
             console.log(currentUser);
-           // console.log(arguments);
+            // console.log(arguments);
             /* if (!currentUser) {
                 throw new Error('Unauthorized')
             }
@@ -95,13 +102,13 @@ exports.resolvers = {
                 coin,
                 amount
             }).save();
-               const {_id} = newEntry;
-              const user = await User.findOneAndUpdate(
-                  { username: currentUser.username },
-                  { $addToSet: { entries: _id }}
-              )
+            const {_id} = newEntry;
+            const user = await User.findOneAndUpdate(
+                {username: currentUser.username},
+                {$addToSet: {entries: _id}}
+            )
 
-         //   debugger;
+            //   debugger;
             return newEntry
         },
         addStory: async (root, {
