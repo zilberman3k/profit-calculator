@@ -1,17 +1,15 @@
 import React, {useState, useEffect} from 'react';
+import PropTypes from 'prop-types';
 import {Query} from 'react-apollo'
 import {GET_COINS} from '../queries'
 import Autocomplete from 'react-autocomplete';
 import {useCoinModel} from '../hooks'
-
+import '../styles/coin-picker.scss'
 function CoinSelector({defaultCoin = {}, onChange = ()=>{}}) {
     const placeholder = 'Select Coin';
     const [text, setText, coin, setCoin] = useCoinModel(defaultCoin);
 
-
-
-    return <div>
-        <Query query={GET_COINS}>
+    return <Query query={GET_COINS}>
             {({data, loading}) => {
                 if (loading) return <div>Loading...</div>
 
@@ -29,8 +27,8 @@ function CoinSelector({defaultCoin = {}, onChange = ()=>{}}) {
                         </div>
                     }
                     }
-                    inputProps={{placeholder}}
-                    renderMenu={(items, value, style) => <div /*style={{ ...style, ...menuStyle}} */ children={items}/>}
+                    inputProps={{placeholder,className:'textBox'}}
+                    renderMenu={(items, value, style) => <div className="container"  children={items}/>}
                     value={text}
                     onChange={(e) => {
                         // console.log(text, coin.name);
@@ -43,11 +41,14 @@ function CoinSelector({defaultCoin = {}, onChange = ()=>{}}) {
                     onMenuVisibilityChange={(isOpen)=>{
                         !isOpen && coin.name!==text && setText(coin.name);
                     }}
-
+                    wrapperProps={{className:'coinPicker'}}
                 />;
             }}
-        </Query>
-    </div>
+        </Query>;
 }
+
+CoinSelector.propTypes = {
+    onChange: PropTypes.func.isRequired
+};
 
 export default CoinSelector;

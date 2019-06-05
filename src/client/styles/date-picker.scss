@@ -1,15 +1,19 @@
 .rdt {
-  /*position: relative;*/
-  float:left;
-  .form-control{
-    &.error{
-      border:3px solid red;
-    }
+  max-width: 600px;
+  width: 80%;
+  display: inline-flex;
+  .form-control {
+    width: 100%;
   }
 }
 
-input.error{
-  border:3px solid red;
+.now-btn{
+  background-color: gray;
+  padding: 6px 12px;
+  margin: 8px 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
 }
 
 .rdtPicker {
@@ -31,6 +35,7 @@ input.error{
   }
 
 }
+
 .rdtStatic .rdtPicker {
   box-shadow: none;
   position: static;

@@ -1,0 +1,23 @@
+.coinPicker {
+  width: 100%;
+  max-width: 600px;
+  display: inline-flex;
+  .container {
+    position: absolute;
+    max-height: 20rem;
+    overflow: auto;
+    max-width: 600px;
+    width: 100%;
+    border:1px solid darkgrey;
+ //   margin-top: -8px;
+  }
+  input{
+ //   margin-bottom: 0;
+  }
+}
+
+.add-entry-amount{
+  width: 100%;
+  max-width: 600px;
+  display: inline-flex;
+}
