@@ -9,12 +9,26 @@ const jwt = require('jsonwebtoken');
 const { ApolloServer } = require('apollo-server-express');
 const { typeDefs } = require('./schema');
 const { resolvers } = require('./resolvers');
-const expressPlayground = require('graphql-playground-middleware-express').default;
+import expressPlayground from 'graphql-playground-middleware-express';
 // mongoose models
 const User = require('./models/User');
 const Story = require('./models/Story');
 const Entry = require('./models/Entry');
 const Coin = require('./models/Coin');
+
+import {InMemoryCache} from 'apollo-cache-inmemory';
+import { ApolloClient } from 'apollo-client';
+import { SchemaLink } from 'apollo-link-schema';
+
+const client = new ApolloClient({
+    ssrMode: true,
+    // Instead of "createHttpLink" use SchemaLink here
+    link: new SchemaLink({ schema: typeDefs }),
+    cache: new InMemoryCache(),
+});
+
+
+console.log(client);
 // config environment
 dotenv.config();
 
@@ -43,6 +57,7 @@ app.get('/playground', expressPlayground({ endpoint: '/graphql' }));
 const server = new ApolloServer({
 	typeDefs,
 	resolvers,
+    cacheControl: { defaultMaxAge: 30 },
 	context: async ({ req }) => {
 		const token = req.headers.authorization ? req.headers.authorization.split(' ')[1] : null;
 		if (token && token !== null) {
@@ -70,3 +85,5 @@ server.applyMiddleware({ app });
 // run server
 app.listen(PORT, 
 	() => console.log(`Server is running on port ${PORT}`));
+
+console.log(server)

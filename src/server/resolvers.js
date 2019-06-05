@@ -7,7 +7,7 @@ exports.resolvers = {
         getCoins: async () => {
             const coins = await axios.get('https://s2.coinmarketcap.com/generated/search/quick_search.json');
             const {data = []} = coins;
-
+            console.log(typeof window);
             return data
         },
         getCurrentUser: async (root, args, {currentUser, User}) => {
@@ -21,7 +21,6 @@ exports.resolvers = {
                     path: 'favorites',
                     model: 'Story'
                 }).populate({path: 'entries', model: 'Entry'});
-            console.log(user);
             return user
         },
         getFeed: async (root, {cursor}, {Story}) => {

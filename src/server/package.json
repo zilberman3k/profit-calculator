@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./server.js"
+    "start": "nodemon --exec babel-node ./server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "apollo-link-schema": "^1.2.2",
     "apollo-server": "^2.4.8",
     "apollo-server-express": "^2.4.8",
     "bcryptjs": "^2.4.3",
@@ -25,5 +26,11 @@
     "jsonwebtoken": "^8.5.0",
     "mongoose": "^5.4.18",
     "nodemon": "^1.18.10"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5"
   }
 }
