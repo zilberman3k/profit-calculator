@@ -15,9 +15,10 @@ function AddEntry({session, history}) {
     const [id, setId] = useState('');
     const [date, setDate] = useState('');
     const [coin, setCoin] = useState('');
+    const [slug, setSlug] = useState('');
     const [amount, setAmount] = useState('');
 
-    const inputs = {id, date, coin, amount};
+    const inputs = {id, date, coin,slug, amount};
 
     const handleSubmit = async (e, addEntry) => {
         e.preventDefault();
@@ -41,14 +42,11 @@ function AddEntry({session, history}) {
                 fn = setDate;
                 validateDate = true;
                 break;
-            case 'coin':
-                fn = setCoin;
-                break;
             case 'amount':
                 fn = setAmount;
-                if (amount !== Number(val)) {
+               /* if (amount !== Number(val)) {
                     val = Number(val);
-                }
+                }*/
                 break;
         }
         if (validateDate) {
@@ -60,6 +58,11 @@ function AddEntry({session, history}) {
         }
 
         return fn && fn(val);
+    };
+
+    const updateCoin = ({name,slug})=>{
+        setCoin(name);
+        setSlug(slug);
     };
 
     const validateDate = (current) => {
@@ -100,7 +103,7 @@ function AddEntry({session, history}) {
                         <button className="now-btn" onClick={temp}>Now</button>
                     </div>
 
-                    <CoinSelector onChange={({name}) => updateInput('coin', name)}/>
+                    <CoinSelector onChange={updateCoin}/>
 
                     <input
                         type="text"

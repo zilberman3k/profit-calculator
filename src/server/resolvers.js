@@ -1,6 +1,7 @@
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const axios = require('axios');
+const all = Promise.all.bind(Promise);
 //console.log(axios);
 exports.resolvers = {
     Query: {
@@ -9,8 +10,38 @@ exports.resolvers = {
             const {data = []} = coins;
             return data
         },
-        getCurrentUser: async (root, args, {currentUser, User}) => {
-            // check empty currentUser
+
+        getProfitOfEntry: async (root, {date,coin,amount,slug}) => {
+            console.log(date,coin,amount);
+            const string =`https://graphs2.coinmarketcap.com/currencies/${slug}/${date}/${Date.now()}/`;
+            console.log(string);
+
+            const result = await axios.get(string);
+            const {price_usd} = result.data;
+            console.log (+amount)*(price_usd.slice(-1)[0][1] - price_usd[0][1]);
+            return (+amount)*(price_usd.slice(-1)[0][1] - price_usd[0][1])+'';
+        },
+        getUserByUserName: async (root, {username}, {User}) => {
+            const user = await User.findOne({username})
+                .populate({path: 'entries', model: 'Entry'})
+                .then(async function (user) {
+                    const {entries} = user;
+                    for (const entry of entries) {
+                        entry.profit = 55;
+                    }
+
+                    console.log(entries);
+                    return await user;
+                });
+
+            return await user
+        },
+        getCurrentUser: async (root, args, {currentUser, User, Entry}) => {
+            console.log(args);
+            // check empty cur
+            //
+            //
+            // rentUser
             if (!currentUser) {
                 return null
             }
@@ -19,7 +50,21 @@ exports.resolvers = {
                 .populate({
                     path: 'favorites',
                     model: 'Story'
-                }).populate({path: 'entries', model: 'Entry'});
+                }).populate({path: 'entries', model: 'Entry'})
+                .then(async function (user) {
+                    const {entries} = user;
+                    for (let entry of entries) {
+                        var r = await entry.populate('profit').execPopulate();
+                        console.log('**********************************');
+                        console.log(r);
+                        console.log('**********************************');
+                        console.log(r.profit);
+                        console.log('**********************************');
+                    }
+
+                    return await user;
+                });
+
             return user
         },
         getFeed: async (root, {cursor}, {Story}) => {
@@ -86,6 +131,7 @@ exports.resolvers = {
             id,
             date,
             coin,
+            slug,
             amount,
         }, {currentUser, Entry, User}) => {
             console.log(currentUser);
@@ -98,15 +144,15 @@ exports.resolvers = {
                 id,
                 date,
                 coin,
+                slug,
                 amount
             }).save();
             const {_id} = newEntry;
             const user = await User.findOneAndUpdate(
                 {username: currentUser.username},
                 {$addToSet: {entries: _id}}
-            )
+            );
 
-            //   debugger;
             return newEntry
         },
         addStory: async (root, {

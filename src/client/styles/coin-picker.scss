@@ -14,6 +14,14 @@
   input{
  //   margin-bottom: 0;
   }
+
+  .coin-item{
+    background-color: lightgrey;
+    &:hover, &.test {
+      background-color: darkgrey;
+      color: white;
+    }
+  }
 }
 
 .add-entry-amount{

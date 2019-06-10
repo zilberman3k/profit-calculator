@@ -6,17 +6,20 @@ exports.typeDefs = `
 		entries: [Entry]
 	}
     type Coin {
-        id: String!,
-        name: String!,
-        symbol: String!,
-        rank: String!,
+        id: String!
+        name: String!
+        symbol: String!
+        rank: String!
         slug: String!
-    }
+    } 
+    
+ 
  
     type Entry{
         id: String!
         date: String!
         coin: String!
+        slug: String!
         amount: Float!
     }
 
@@ -32,6 +35,7 @@ exports.typeDefs = `
 		likes: Int!
 	}	
 
+
 	type Token {
 		token: String!
 	}
@@ -45,12 +49,14 @@ exports.typeDefs = `
 	type Query {
 		getCoins: [Coin]
 		getCurrentUser: User
+		getProfitOfEntry(date:String,coin:String,slug:String,amount:Float):String
 		getFeed(cursor: String): Feed
 		getStory(id: ID!): Story
 		getUserStories(username: String!): [Story]
 		getUserEntries(username: String!): [Entry]
 		getStoriesByCategory(category: String!): [Story]
 		searchStories(searchText: String): [Story]
+		getUserByUserName(username: String!):User
 	}
 
 	type Mutation {
@@ -58,6 +64,7 @@ exports.typeDefs = `
 		    id:String!
 		    date:String!
 		    coin:String!
+		    slug:String!
 		    amount:Float!
 		): Entry
 		addStory(

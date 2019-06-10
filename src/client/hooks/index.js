@@ -6,7 +6,7 @@ const useCoinModel = ({id = '', name = '', slug = '', symbol = ''}) => {
 
     useEffect(() => {
         setText(coin.name);
-    }, [coin.id]);
+    }, [coin]);
 
 
     return [text, setText, coin, setCoin];

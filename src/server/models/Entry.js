@@ -15,6 +15,10 @@ const entrySchema = new Schema({
         type: String,
         required: true
     },
+    slug: {
+        type: String,
+        required: true
+    },
     amount:{
         type:Number,
         required: true
@@ -22,5 +26,6 @@ const entrySchema = new Schema({
 });
 
 entrySchema.index({'$**': 'text'});
+
 
 module.exports = mongoose.model('Entry', entrySchema);

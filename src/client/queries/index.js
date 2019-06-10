@@ -27,6 +27,13 @@ export const GET_COINS = gql`
     }
 `;
 
+export const GET_PROFIT_OF_ENTRY = gql`
+    query getProfitOfEntry($date:String,$coin:String, $slug:String,$amount:Float){
+		getProfitOfEntry(date:$date,coin:$coin,slug:$slug,amount:$amount)
+		
+	}
+`;
+
 export const GET_CURRENT_USER = gql`
 	query getCurrentUser {
 		getCurrentUser {
@@ -39,6 +46,7 @@ export const GET_CURRENT_USER = gql`
 			entries{
 				id
 				date
+				slug
 				coin
 				amount
 			}
@@ -139,14 +147,16 @@ export const SEARCH_STORIES = gql`
 `
 
 export const ADD_ENTRY = gql`
-    mutation addEntryMutation( $id: String!, $date: String!, $coin: String!, $amount: Float! ) {
+    mutation addEntryMutation( $id: String!, $date: String!, $coin: String!,$slug: String!, $amount: Float! ) {
             addEntry (	id: $id,
                         date: $date,
                         coin: $coin,
+						slug: $slug,
                         amount: $amount ) {
                 id
                 date
                 coin
+				slug
                 amount
             }
         }
