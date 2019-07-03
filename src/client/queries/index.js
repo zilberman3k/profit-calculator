@@ -18,11 +18,7 @@ export const SIGNIN_USER = gql`
 export const GET_COINS = gql`
     query getCoins {
         getCoins {
-            id
-            name
-            symbol
-            slug
-            rank
+            tokens
         }
     }
 `;
@@ -34,22 +30,27 @@ export const GET_PROFIT_OF_ENTRY = gql`
 	}
 `;
 
+export const GET_TOTAL_PROFIT_OF_USER = gql`
+    query getTotalProfitOfUser{
+        getTotalProfitOfUser
+    }
+`;
+
 export const GET_CURRENT_USER = gql`
 	query getCurrentUser {
 		getCurrentUser {
 			email
 			username
-			favorites {
-				id
-				title
-			}
+            total
 			entries{
 				id
 				date
 				slug
 				coin
 				amount
+				profit
 			}
+			
 		}
 	}
 `
@@ -146,10 +147,15 @@ export const SEARCH_STORIES = gql`
 	}
 `
 
+export const SET_PROFIT_OF_USER = gql`
+    mutation setProfitOfUser($profits: [Float]) {
+        setProfitOfUser(profits:$profits)
+    }
+`;
+
 export const ADD_ENTRY = gql`
-    mutation addEntryMutation( $id: String!, $date: String!, $coin: String!,$slug: String!, $amount: Float! ) {
-            addEntry (	id: $id,
-                        date: $date,
+    mutation addEntryMutation( $date: String!, $coin: String!,$slug: String!, $amount: Float! ) {
+            addEntry (  date: $date,
                         coin: $coin,
 						slug: $slug,
                         amount: $amount ) {
@@ -161,6 +167,36 @@ export const ADD_ENTRY = gql`
             }
         }
 `;
+
+export const EDIT_ENTRY = gql`
+    mutation editEntryMutation( $id: ID!, $date: String!, $coin: String!,$slug: String!, $amount: Float! ) {
+        editEntry (	id: $id,
+            date: $date,
+            coin: $coin,
+            slug: $slug,
+            amount: $amount ) {
+            id
+            date
+            coin
+            slug
+            amount
+        }
+    }
+`;
+
+export const DELETE_ENTRY = gql`
+    mutation deleteEntryMutation( $id: ID!) {
+        deleteEntry (id: $id) {
+            id
+            date
+            coin
+            slug
+            amount
+        }
+    }
+`;
+
+
 export const ADD_STORY = gql`
 	mutation addStoryMutation(
 					$title: String!, 

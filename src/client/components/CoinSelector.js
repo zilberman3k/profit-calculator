@@ -10,7 +10,7 @@ import '../styles/coin-picker.scss'
 const Coins = ({defaultCoin = {}, onChange = ()=>{}, coins=[]})=>{
     const placeholder = 'Select Coin';
     const [text, setText, coin, setCoin] = useCoinModel(defaultCoin);
-      //  window.Autocomplete = Autocomplete;
+        window.Autocomplete = Autocomplete;
     return <Autocomplete
         items={coins}
         shouldItemRender={(item, value) => (item.name + ' ' + item.symbol).search(new RegExp(value, "i")) > -1}
@@ -49,7 +49,7 @@ function CoinSelector({defaultCoin = {}, onChange = ()=>{}}) {
     return <Query query={GET_COINS}>
             {({data, loading}) => {
                 if (loading) return <div>Loading...</div>
-                console.log('123');
+                console.error(data);
                 const coins = data.getCoins || [];
               return <Coins defaultCoin={defaultCoin} onChange={onChange} coins={coins}/>
             }}

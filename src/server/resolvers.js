@@ -1,69 +1,83 @@
+// import {GET_CURRENT_USER} from "../client/queries/index";
+const gql = require('graphql-tag');
+
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const axios = require('axios');
 const all = Promise.all.bind(Promise);
-//console.log(axios);
-exports.resolvers = {
+const GET_TOTAL_PROFIT_OF_USER = gql`
+    query getTotalProfitOfUser{
+        getTotalProfitOfUser
+    }
+`;
+
+export const GET_CURRENT_USER = gql`
+    query getCurrentUser {
+        getCurrentUser {
+            email
+            username
+            total
+            entries{
+                id
+                date
+                slug
+                coin
+                amount
+                profit
+            }
+
+        }
+    }
+`
+
+
+const GET_PROFIT_OF_ENTRY = gql`
+    query getProfitOfEntry($date:String,$coin:String, $slug:String,$amount:Float){
+        getProfitOfEntry(date:$date,coin:$coin,slug:$slug,amount:$amount)
+
+    }
+`;
+
+const resolvers = {
     Query: {
-        getCoins: async () => {
+        getCoins: async (root,_,ctx) => {
+            ctx && console.log(ctx.coins.slice(0,20));
             const coins = await axios.get('https://s2.coinmarketcap.com/generated/search/quick_search.json');
             const {data = []} = coins;
-            return data
+            return data.map(c=> {return {tokens:c.tokens.join(',')}})
         },
+        getProfitOfEntry: async (root, {date, coin, amount, slug}, context) => {
 
-        getProfitOfEntry: async (root, {date,coin,amount,slug}) => {
-            console.log(date,coin,amount);
-            const string =`https://graphs2.coinmarketcap.com/currencies/${slug}/${date}/${Date.now()}/`;
-            console.log(string);
+            const string = `https://graphs2.coinmarketcap.com/currencies/${slug}/${date}/${Date.now()}/`;
 
             const result = await axios.get(string);
             const {price_usd} = result.data;
-            console.log (+amount)*(price_usd.slice(-1)[0][1] - price_usd[0][1]);
-            return (+amount)*(price_usd.slice(-1)[0][1] - price_usd[0][1])+'';
+            return (+amount) * (price_usd.slice(-1)[0][1] - price_usd[0][1]) + '';
         },
-        getUserByUserName: async (root, {username}, {User}) => {
-            const user = await User.findOne({username})
+        getTotalProfitOfUser: async (root, args, ctx) => {
+            console.log('123', Object.keys(ctx));
+            /* var r = await ctx.User.findOne({username:ctx.currentUser.username})
+                 .populate({path: 'entries', model: 'Entry'});
+             console.log(r.length);*/
+            return await 72.93;
+        },
+        getUserByUserName: async (root, {username}, ctx) => {
+
+            const user = await ctx.User.findOne({username})
                 .populate({path: 'entries', model: 'Entry'})
-                .then(async function (user) {
-                    const {entries} = user;
-                    for (const entry of entries) {
-                        entry.profit = 55;
-                    }
+                .exec();
 
-                    console.log(entries);
-                    return await user;
-                });
 
-            return await user
+            return await user;
         },
         getCurrentUser: async (root, args, {currentUser, User, Entry}) => {
-            console.log(args);
-            // check empty cur
-            //
-            //
-            // rentUser
+
             if (!currentUser) {
                 return null
             }
 
             const user = await User.findOne({username: currentUser.username})
-                .populate({
-                    path: 'favorites',
-                    model: 'Story'
-                }).populate({path: 'entries', model: 'Entry'})
-                .then(async function (user) {
-                    const {entries} = user;
-                    for (let entry of entries) {
-                        var r = await entry.populate('profit').execPopulate();
-                        console.log('**********************************');
-                        console.log(r);
-                        console.log('**********************************');
-                        console.log(r.profit);
-                        console.log('**********************************');
-                    }
-
-                    return await user;
-                });
+                .populate({path: 'entries', model: 'Entry'});
 
             return user
         },
@@ -96,7 +110,7 @@ exports.resolvers = {
             return story
         },
         getUserStories: async (root, {username}, {Story}) => {
-            const stories = await Story.find({author: username})
+            const stories = await Story.find({author: username});
             return stories
         },
         getStoriesByCategory: async (root, {category}, {Story}) => {
@@ -126,7 +140,33 @@ exports.resolvers = {
             return stories
         }
     },
+
+    Entry: {
+        profit: async ({valueAtBuying, slug, amount}) => {
+            console.log('***',valueAtBuying, slug, amount);
+            if (valueAtBuying) {
+                const string = `https://graphs2.coinmarketcap.com/currencies/${slug}/${Date.now() - 18000000}/${Date.now()}/`;
+                const result = await axios.get(string);
+                let valueNow = null;
+                try {
+                    const {price_usd} = result.data;
+                    valueNow = price_usd.slice(-1)[0][1];
+                    console.log(slug,valueNow);
+                }
+                catch (e) {
+                }
+                if (valueNow !== null) {
+                    return await amount * (valueNow - valueAtBuying);
+                }
+            }
+
+            return null;
+        }
+    },
     Mutation: {
+        setProfitOfUser: async (root, {profits = []}) => {
+            return await profits.reduce((a, b) => a + b, 0);
+        },
         addEntry: async (root, {
             id,
             date,
@@ -134,18 +174,31 @@ exports.resolvers = {
             slug,
             amount,
         }, {currentUser, Entry, User}) => {
-            console.log(currentUser);
-            // console.log(arguments);
-            /* if (!currentUser) {
-                throw new Error('Unauthorized')
+
+
+
+            console.log('addEntry - ',id, date, coin, slug, amount);
+
+
+            const timeDate = (new Date(date)).getTime();
+            const string = `https://graphs2.coinmarketcap.com/currencies/${slug}/${timeDate}/${(timeDate + 300000)}/`;
+            const result = await axios.get(string);
+            let valueAtBuying = 0;
+            try {
+                const {price_usd} = result.data;
+                valueAtBuying = price_usd[0][1]
             }
-*/
+            catch (e) {
+            }
+
+
             const newEntry = await new Entry({
                 id,
                 date,
                 coin,
                 slug,
-                amount
+                amount,
+                valueAtBuying
             }).save();
             const {_id} = newEntry;
             const user = await User.findOneAndUpdate(
@@ -155,90 +208,129 @@ exports.resolvers = {
 
             return newEntry
         },
-        addStory: async (root, {
-            title,
-            imageUrl,
-            description,
-            text,
-            category
-        }, {currentUser, Story}) => {
-            if (!currentUser) {
-                throw new Error('Unauthorized')
-            }
-
-            const newStory = await new Story({
-                title,
-                description,
-                text,
-                imageUrl,
-                category,
-                author: currentUser.username
-            }).save();
-
-            return newStory
-        },
-        deleteStory: async (root, {id}, {currentUser, Story, User}) => {
-            // user unauthorizaed
-            if (!currentUser) {
-                throw new Error('Unauthorized')
-            }
-
-            const story = await Story.findById(id)
-            if (!story) {
-                throw new Error('Story not found')
-            }
-            // user not author of story
-            if (story.author !== currentUser.username) {
-                throw new Error("Can't delete this story")
-            }
-
-            await story.remove()
-            return story
-        },
-        likeStory: async (root, {id}, {currentUser, Story, User}) => {
-            // user not authorized
-            if (!currentUser) {
-                throw new Error('Unauthorized')
-            }
-
+        editEntry: async (root, {
+            id,
+            date,
+            coin,
+            slug,
+            amount,
+        }, {currentUser, Entry, User}) => {
+            console.log('editEntry - ', id, date, coin, slug, amount);
+            const timeDate = (new Date(date)).getTime();
+            const string = `https://graphs2.coinmarketcap.com/currencies/${slug}/${timeDate}/${Date.now()}/`;
+            const result = await axios.get(string);
+            let valueAtBuying = 0;
             try {
-                // find story and update
-                const story = await Story.findOneAndUpdate(
-                    {_id: id},
-                    {$inc: {likes: 1}}
-                )
-                // find user and update
-                const user = await User.findOneAndUpdate(
-                    {username: currentUser.username},
-                    {$addToSet: {favorites: id}}
-                )
-
-                return story
-            } catch (err) {
-                console.log(err)
+                const {price_usd} = result.data;
+                valueAtBuying = price_usd[0][1]
             }
-        },
-        unlikeStory: async (root, {id}, {currentUser, Story, User}) => {
-            if (!currentUser) {
-                throw new Error('Unauthorized')
+            catch (e) {
             }
 
-            try {
-                // find story and update
-                const story = await Story.findOneAndUpdate(
-                    {_id: id},
-                    {$inc: {likes: -1}}
-                )
-                // find user and update
-                const user = await User.findOneAndUpdate(
-                    {username: currentUser.username},
-                    {$pull: {favorites: id}}
-                )
-                return story
-            } catch (err) {
-                console.log(err)
-            }
+
+            const nextEntry = await Entry.findOneAndUpdate({_id:id}, {
+                date,
+                coin,
+                slug,
+                amount,
+                valueAtBuying
+            }).exec();
+            return await nextEntry;
         },
+
+        deleteEntry:async (root,{id},{currentUser, Entry, User})=> {
+            const nextEntry = await Entry.findOneAndRemove({_id: id}).exec();
+
+            console.log('deleteEntry - ',nextEntry);
+            return nextEntry;
+        }
+        ,
+
+
+        /*  addStory: async (root, {
+              title,
+              imageUrl,
+              description,
+              text,
+              category
+          }, {currentUser, Story}) => {
+              if (!currentUser) {
+                  throw new Error('Unauthorized')
+              }
+
+              const newStory = await new Story({
+                  title,
+                  description,
+                  text,
+                  imageUrl,
+                  category,
+                  author: currentUser.username
+              }).save();
+
+              return newStory
+          },
+          deleteStory: async (root, {id}, {currentUser, Story, User}) => {
+              // user unauthorizaed
+              if (!currentUser) {
+                  throw new Error('Unauthorized')
+              }
+
+              const story = await Story.findById(id)
+              if (!story) {
+                  throw new Error('Story not found')
+              }
+              // user not author of story
+              if (story.author !== currentUser.username) {
+                  throw new Error("Can't delete this story")
+              }
+
+              await story.remove();
+              return story;
+          },
+          likeStory: async (root, {id}, {currentUser, Story, User}) => {
+              // user not authorized
+              if (!currentUser) {
+                  throw new Error('Unauthorized')
+              }
+
+              try {
+                  // find story and update
+                  const story = await Story.findOneAndUpdate(
+                      {_id: id},
+                      {$inc: {likes: 1}}
+                  )
+                  // find user and update
+                  const user = await User.findOneAndUpdate(
+                      {username: currentUser.username},
+                      {$addToSet: {favorites: id}}
+                  )
+
+                  return story
+              } catch (err) {
+                  console.log(err)
+              }
+          },
+          unlikeStory: async (root, {id}, {currentUser, Story, User}) => {
+              if (!currentUser) {
+                  throw new Error('Unauthorized')
+              }
+
+              try {
+                  // find story and update
+                  const story = await Story.findOneAndUpdate(
+                      {_id: id},
+                      {$inc: {likes: -1}}
+                  )
+                  // find user and update
+                  const user = await User.findOneAndUpdate(
+                      {username: currentUser.username},
+                      {$pull: {favorites: id}}
+                  )
+                  return story
+              } catch (err) {
+                  console.log(err)
+              }
+          },*/
         signupUser: async (root, {username, password, email}, {User}) => {
             // find user with username
             const user = await User.findOne({username})
@@ -284,3 +376,4 @@ exports.resolvers = {
         }
     }
 };
+exports.resolvers = resolvers;

@@ -1,29 +1,45 @@
 import React, {Component, useState} from 'react'
-import {Mutation} from 'react-apollo'
+import {Mutation,Query} from 'react-apollo'
 import {withRouter} from 'react-router-dom'
 import DateTime from 'react-datetime';
 import moment from 'moment';
 import '../../styles/date-picker.scss';
 import withAuth from '../withAuth'
-import {ADD_STORY, GET_FEED, GET_USER_STORIES, ADD_ENTRY, GET_CURRENT_USER} from '../../queries'
+import {ADD_STORY, GET_FEED, GET_USER_STORIES, EDIT_ENTRY, GET_CURRENT_USER} from '../../queries'
 import Error from '../Error'
 import CoinSelector from '../CoinSelector';
+import gql from 'graphql-tag';
+
+//// test /////
 import AutoComplete from '../AutoComplete';
-import uuid from 'uuid/v1';
-import LikeStory from './LikeStory'
+//////////////////////
 
-function AddEntry({session, history}) {
+const test = (...args)=>{
+    console.log(args);
+}
 
-    const [date, setDate] = useState('');
-    const [coin, setCoin] = useState('');
-    const [slug, setSlug] = useState('');
-    const [amount, setAmount] = useState('');
 
-    const inputs = { date, coin,slug, amount};
+function EditEntry({session, history, match}) {
 
-    const handleSubmit = async (e, addEntry) => {
+    const {id} = match.params;
+    const entry = session.getCurrentUser.entries.find(e=>e.id===id);
+
+    const [date, setDate] = useState(moment(+entry.date).format('YYYY-MM-DD HH:mm:ss'));
+    const [coin, setCoin] = useState(entry.coin);
+    const [slug, setSlug] = useState(entry.slug);
+    const [amount, setAmount] = useState(entry.amount);
+
+    const inputs = {id, date, coin,slug, amount};
+
+    const handleSubmit = async (e, editEntry) => {
         e.preventDefault();
-        const entry = await addEntry();
+        debugger;
+        try {
+            const entry = await editEntry();
+        }
+        catch(e){
+        debugger;
+        }
         history.push('/');
     };
 
@@ -35,6 +51,7 @@ function AddEntry({session, history}) {
     const updateInput = (name, val) => {
         let fn = null, validateDate = false;
         switch (name) {
+
             case 'date':
                 fn = setDate;
                 validateDate = true;
@@ -71,19 +88,22 @@ function AddEntry({session, history}) {
 
     return <div className="App">
         <Mutation
-            mutation={ADD_ENTRY}
-            variables={{...inputs ,amount:parseFloat(amount)}}
-            refetchQueries={() => [{query: GET_CURRENT_USER}]}
+            mutation={EDIT_ENTRY}
+            variables={{...inputs, amount:parseFloat(amount)}}
+            refetchQueries={() => [
+                {query: GET_CURRENT_USER}
+            ]}
         >
-            {(addEntry, {data, loading, error}) => {
+            {(editEntry, {data, loading, error,client}) => {
 
-                console.log(loading);
-                console.log(data);
+                console.log(data,inputs);
+                debugger;
+
                 return <form
                     className="form"
-                    onSubmit={(e) => handleSubmit(e, addEntry)}
+                    onSubmit={(e) => handleSubmit(e, editEntry)}
                 >
-                    <h2>Add Entry</h2>
+                    <h2>Edit Entry</h2>
                     <div style={{width:'100%',maxWidth:'600px',display:'inline-flex'}}>
                         <DateTime dateFormat="YYYY-MM-DD"
                                   timeFormat="HH:mm:ss"
@@ -96,8 +116,10 @@ function AddEntry({session, history}) {
                         <button className="now-btn" onClick={temp}>Now</button>
                     </div>
 
-                   {/* <CoinSelector onChange={updateCoin} defaultCoin={{}}/>*/}
-                   <AutoComplete onClick={updateCoin} />
+                  {/*  <CoinSelector onChange={updateCoin} defaultCoin={coin}/>*/}
+
+                    <AutoComplete defaultCoin={coin} onClick={updateCoin} />
+
                     <input
                         type="text"
                         placeholder="Amount"
@@ -123,4 +145,4 @@ function AddEntry({session, history}) {
 
 }
 
-export default withAuth(session => session && session.getCurrentUser)(withRouter(AddEntry))
+export default withAuth(session => session && session.getCurrentUser)(withRouter(EditEntry))

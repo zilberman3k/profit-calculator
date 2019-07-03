@@ -8,7 +8,7 @@ const UserInfo = ({ currentUser }) => (
 		<p>Username: {currentUser.username}</p>
 		<p>Email: {currentUser.email}</p>
 		<p>createdAt: 20.03.2019</p>
-		<ul>
+		{/*<ul>
 			<h5>{currentUser.username}'s favorites stories</h5>
 			{ currentUser.favorites.length ? (
 				currentUser.favorites.map(story => (
@@ -27,7 +27,7 @@ const UserInfo = ({ currentUser }) => (
 					<strong>{currentUser.username} doesn't have favorite story</strong>
 				</small>
 		}
-		</ul>
+		</ul>*/}
 	</div>
 );
 

@@ -8,14 +8,14 @@
     overflow: auto;
     max-width: 600px;
     width: 100%;
-    border:1px solid darkgrey;
- //   margin-top: -8px;
+    border: 1px solid darkgrey;
+    //   margin-top: -8px;
   }
-  input{
- //   margin-bottom: 0;
+  input {
+    //   margin-bottom: 0;
   }
 
-  .coin-item{
+  .coin-item {
     background-color: lightgrey;
     &:hover, &.test {
       background-color: darkgrey;
@@ -24,8 +24,44 @@
   }
 }
 
-.add-entry-amount{
+.add-entry-amount {
+  // width: 100%;
+  max-width: 600px;
+  display: block;
+}
+
+.autocomplete-wrapper {
   width: 100%;
   max-width: 600px;
-  display: inline-flex;
+  position: relative;
+  .search {
+
+  }
+  .suggestions {
+    max-height: 30rem;
+    background-color: lightgrey;
+    border: 2px solid;
+    border-radius: 1%;
+    overflow: auto;
+    position: absolute;
+    width: inherit;
+    margin: -0.5rem 0 0 0;
+    padding: 0;
+    line-height: 1.2rem;
+    &:hover {
+      li {
+        &:hover {
+          background-color: darkgrey;
+        }
+      }
+    }
+    &:not(:hover) {
+      li {
+        &.marked {
+          background-color: darkgrey;
+        }
+      }
+    }
+
+  }
 }

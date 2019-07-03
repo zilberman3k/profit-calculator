@@ -1,12 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const {Date,Number,String} = Schema.Types;
+const {Date, Number, String} = Schema.Types;
 
 const entrySchema = new Schema({
-    id:{
-        type:String,
-        required: true
-    },
     date: {
         type: Date,
         required: true,
@@ -19,9 +15,13 @@ const entrySchema = new Schema({
         type: String,
         required: true
     },
-    amount:{
-        type:Number,
+    amount: {
+        type: Number,
         required: true
+    },
+    valueAtBuying: {
+        type: Number,
+        required: false
     }
 });
 
