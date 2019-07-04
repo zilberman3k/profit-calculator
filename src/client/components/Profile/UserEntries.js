@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 import {
     GET_USER_STORIES,
     GET_FEED,
-    DELETE_STORY,
+    DELETE_ENTRY,
     GET_CURRENT_USER,
     GET_USER_ENTRIES,
     GET_PROFIT_OF_ENTRY
@@ -14,6 +14,25 @@ import moment from 'moment';
 import {Table, Thead, Tbody, Tr, Th, Td} from 'react-super-responsive-table';
 import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css';
 import './userEntries.scss';
+
+const handleDelete = async (deleteEntry)=>{
+    debugger;
+    const entry = await deleteEntry();
+    console.log(entry);
+    return entry;
+};
+const DeleteEntry = ({id}) => {
+
+    return <Mutation
+        mutation={DELETE_ENTRY}
+        variables={{id}}
+        refetchQueries={() => [{query: GET_CURRENT_USER}]}
+    >
+        {(deleteEntry, {data, loading, error}) => {
+            return <span onClick={handleDelete.bind(null,deleteEntry)}>Delete</span>;
+        }}
+    </Mutation>;
+};
 
 
 function UserEntries({entries, total}) {
@@ -43,7 +62,7 @@ function UserEntries({entries, total}) {
                 <Td>{coin}</Td>
                 <Td>{amount}</Td>
                 <Td>{profit}</Td>
-                <Td><Link to={`/edit-entry/${id}`}>Edit</Link> { }<span>Delete</span></Td>
+                <Td><Link to={`/edit-entry/${id}`}>Edit</Link> { }<DeleteEntry id={id}/></Td>
             </Tr>
         })}
 

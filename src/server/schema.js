@@ -61,7 +61,7 @@ exports.typeDefs = `
 
 	type Mutation {
 		setProfitOfUser(profits: [Float]):Float
-		deleteEntry(id:String!):Entry
+		deleteEntry(id:ID!):Entry
 		addEntry(
 		    date:String!
 		    coin:String!

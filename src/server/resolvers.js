@@ -40,11 +40,13 @@ const GET_PROFIT_OF_ENTRY = gql`
 
 const resolvers = {
     Query: {
-        getCoins: async (root,_,ctx) => {
-            ctx && console.log(ctx.coins.slice(0,20));
+        getCoins: async (root, _, ctx) => {
+            ctx && console.log(ctx.coins.slice(0, 20));
             const coins = await axios.get('https://s2.coinmarketcap.com/generated/search/quick_search.json');
             const {data = []} = coins;
-            return data.map(c=> {return {tokens:c.tokens.join(',')}})
+            return data.map(c => {
+                return {tokens: c.tokens.join(',')}
+            })
         },
         getProfitOfEntry: async (root, {date, coin, amount, slug}, context) => {
 
@@ -143,7 +145,7 @@ const resolvers = {
 
     Entry: {
         profit: async ({valueAtBuying, slug, amount}) => {
-            console.log('***',valueAtBuying, slug, amount);
+            console.log('***', valueAtBuying, slug, amount);
             if (valueAtBuying) {
                 const string = `https://graphs2.coinmarketcap.com/currencies/${slug}/${Date.now() - 18000000}/${Date.now()}/`;
                 const result = await axios.get(string);
@@ -151,7 +153,7 @@ const resolvers = {
                 try {
                     const {price_usd} = result.data;
                     valueNow = price_usd.slice(-1)[0][1];
-                    console.log(slug,valueNow);
+                    console.log(slug, valueNow);
                 }
                 catch (e) {
                 }
@@ -168,7 +170,6 @@ const resolvers = {
             return await profits.reduce((a, b) => a + b, 0);
         },
         addEntry: async (root, {
-            id,
             date,
             coin,
             slug,
@@ -176,8 +177,7 @@ const resolvers = {
         }, {currentUser, Entry, User}) => {
 
 
-
-            console.log('addEntry - ',id, date, coin, slug, amount);
+            console.log('addEntry - ', date, coin, slug, amount);
 
 
             const timeDate = (new Date(date)).getTime();
@@ -193,7 +193,6 @@ const resolvers = {
 
 
             const newEntry = await new Entry({
-                id,
                 date,
                 coin,
                 slug,
@@ -228,7 +227,7 @@ const resolvers = {
             }
 
 
-            const nextEntry = await Entry.findOneAndUpdate({_id:id}, {
+            const nextEntry = await Entry.findOneAndUpdate({_id: id}, {
                 date,
                 coin,
                 slug,
@@ -238,10 +237,12 @@ const resolvers = {
             return await nextEntry;
         },
 
-        deleteEntry:async (root,{id},{currentUser, Entry, User})=> {
-            const nextEntry = await Entry.findOneAndRemove({_id: id}).exec();
+        deleteEntry: async (root, {id}, {currentUser, Entry, User}) => {
+            const [nextEntry] = await all([
+                Entry.findOneAndRemove({_id: id}),
+                User.findOneAndUpdate({username: currentUser.username}, {$pull: {entries: id}})
+            ]);
 
-            console.log('deleteEntry - ',nextEntry);
             return nextEntry;
         }
         ,

@@ -7,10 +7,7 @@ import '../../styles/date-picker.scss';
 import withAuth from '../withAuth'
 import {ADD_STORY, GET_FEED, GET_USER_STORIES, ADD_ENTRY, GET_CURRENT_USER} from '../../queries'
 import Error from '../Error'
-import CoinSelector from '../CoinSelector';
 import AutoComplete from '../AutoComplete';
-import uuid from 'uuid/v1';
-import LikeStory from './LikeStory'
 
 function AddEntry({session, history}) {
 
