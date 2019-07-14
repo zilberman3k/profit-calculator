@@ -15,12 +15,6 @@ import {Table, Thead, Tbody, Tr, Th, Td} from 'react-super-responsive-table';
 import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css';
 import './userEntries.scss';
 
-const handleDelete = async (deleteEntry)=>{
-    debugger;
-    const entry = await deleteEntry();
-    console.log(entry);
-    return entry;
-};
 const DeleteEntry = ({id}) => {
 
     return <Mutation
@@ -29,7 +23,7 @@ const DeleteEntry = ({id}) => {
         refetchQueries={() => [{query: GET_CURRENT_USER}]}
     >
         {(deleteEntry, {data, loading, error}) => {
-            return <span onClick={handleDelete.bind(null,deleteEntry)}>Delete</span>;
+            return <span onClick={deleteEntry}>Delete</span>;
         }}
     </Mutation>;
 };
