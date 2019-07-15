@@ -4,15 +4,15 @@ import { withRouter } from 'react-router-dom'
 
 class Signout extends Component {
 	handleLogout (client, history) {
-		localStorage.setItem('token', '')
-		client.resetStore()
-		history.push('/')
+		localStorage.setItem('token', '');
+		client.resetStore();
+		history.push('/');
 	}
 	render () {
 		return (
 			<ApolloConsumer>
 				{
-					client => <a href="/#"
+					client => <a href="/"
 								onClick={() => this.handleLogout(client, this.props.history)} 
 								style={{ cursor: 'pointer'}}
 							  >

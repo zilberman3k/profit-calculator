@@ -1,63 +1,196 @@
-import React, {useState, useEffect} from 'react';
-import PropTypes from 'prop-types';
-import {Query} from 'react-apollo'
-import {GET_COINS} from '../queries'
-import Autocomplete from 'react-autocomplete';
-import {useCoinModel} from '../hooks'
-import '../styles/coin-picker.scss'
+import React, {Component} from "react";
+import PropTypes from "prop-types";
+import gql from 'graphql-tag'
+import {Mutation, Query, ApolloConsumer} from 'react-apollo'
+import {ADD_STORY, GET_FEED, GET_USER_STORIES, EDIT_ENTRY, GET_CURRENT_USER, GET_COINS} from '../queries'
+import '../styles/coin-picker.scss';
 
+export class CoinSelector extends Component {
+    static propTypes = {
+        suggestions: PropTypes.instanceOf(Array),
+        defaultCoin: PropTypes.string,
+        onClick: PropTypes.func
+    };
+    static defaultProperty = {
+        suggestions: [],
+    };
 
-const Coins = ({defaultCoin = {}, onChange = ()=>{}, coins=[]})=>{
-    const placeholder = 'Select Coin';
-    const [text, setText, coin, setCoin] = useCoinModel(defaultCoin);
-        window.Autocomplete = Autocomplete;
-    return <Autocomplete
-        items={coins}
-        shouldItemRender={(item, value) => (item.name + ' ' + item.symbol).search(new RegExp(value, "i")) > -1}
-        getItemValue={(item) => item.name}
-        renderItem={(item, highlighted) => {
-            return <div
-                key={item.slug}
-                className={'coin-item'}
-            >
-                {item.name} - ({item.symbol})
+    static getCoinBySelectedText = (suggestions, text) => {
+        const names = suggestions.map(c => c.split(',')[0].toLowerCase());
+        const idx = names.indexOf(text.toLowerCase());
+        return suggestions[idx].split(',');
+    };
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            activeSuggestion: 0,
+            filteredSuggestions: [],
+            showSuggestions: false,
+            userInput: props.defaultCoin || ''
+        };
+        if (props.defaultCoin) {
+            const [name, slug] = CoinSelector.getCoinBySelectedText(props.suggestions, props.defaultCoin);
+            this.updateParentWithSelectedCoin(name, slug);
+        }
+    }
+
+    updateParentWithSelectedCoin = (name, slug) => {
+        this.props.onClick && this.props.onClick(name, slug);
+    };
+
+    onChange = e => {
+        const {suggestions} = this.props;
+        const userInput = e.currentTarget.value;
+
+        const filteredSuggestions = suggestions.filter(
+            suggestion =>
+                suggestion.toLowerCase().indexOf(userInput.toLowerCase()) > -1
+        );
+
+        this.setState({
+            activeSuggestion: 0,
+            filteredSuggestions,
+            showSuggestions: true,
+            userInput: e.currentTarget.value
+        });
+    };
+
+    onFocus = e => {
+        this.setState({showSuggestions: true});
+    };
+
+    onBlur = e => {
+        this.setState({showSuggestions: false});
+    };
+
+    onClick = (name, slug, e) => {
+        this.setState({
+            activeSuggestion: 0,
+            filteredSuggestions: [],
+            showSuggestions: false,
+            userInput: name,
+            name,
+            slug
+        }, this.updateParentWithSelectedCoin(name, slug));
+    };
+    onKeyDown = e => {
+
+        const {activeSuggestion, filteredSuggestions, name = '', slug} = this.state;
+
+        if (e.keyCode === 13) {
+            e.preventDefault();
+            e.stopPropagation();
+            const [nextName, nextSlug] = filteredSuggestions[activeSuggestion].split(',');
+            this.setState({
+                activeSuggestion: 0,
+                showSuggestions: false,
+                userInput: nextName,
+                name: nextName,
+                slug: nextSlug
+            }, this.updateParentWithSelectedCoin(nextName, nextSlug));
+        } else if (e.keyCode === 38) {
+            if (activeSuggestion === 0) {
+                return;
+            }
+
+            this.setState({activeSuggestion: activeSuggestion - 1});
+        } else if (e.keyCode === 40) {
+            if (activeSuggestion - 1 === filteredSuggestions.length) {
+                return;
+            }
+
+            this.setState({activeSuggestion: activeSuggestion + 1});
+        }
+        else if (e.keyCode === 27) {
+            this.setState({
+                activeSuggestion: 0,
+                showSuggestions: false,
+                userInput: name
+            });
+        }
+    };
+
+    render() {
+        const {
+            onChange,
+            onClick,
+            onKeyDown,
+            onFocus,
+            onBlur,
+            state: {
+                activeSuggestion,
+                filteredSuggestions,
+                showSuggestions,
+                userInput
+            }
+        } = this;
+        let suggestionsListComponent;
+        if (showSuggestions && userInput) {
+            if (filteredSuggestions.length) {
+                suggestionsListComponent = (
+                    <ul className="suggestions">
+                        {filteredSuggestions.map((suggestion, index) => {
+                            let className = null;
+                            const [name, slug, symbol] = suggestion.split(',');
+                            if (index === activeSuggestion) {
+                                className = "marked";
+                            }
+
+                            return (
+                                <li key={suggestion} slug={slug} name={name} className={className}
+                                    onClick={onClick.bind(this, name, slug)}>
+                                    {name} - ({symbol})
+                                </li>
+                            );
+                        })}
+                    </ul>
+                );
+            } else {
+                suggestionsListComponent = (
+                    <div className="no-suggestions">
+                        <em>No suggestions</em>
+                    </div>
+                );
+            }
+        }
+
+        return (
+            <React.Fragment>
+                <input
+                    placeholder="Coin"
+                    className="search"
+                    onChange={onChange}
+                    onKeyDown={onKeyDown}
+                    value={userInput}
+                    required={true}
+                />
+                {suggestionsListComponent}
+            </React.Fragment>
+        );
+    }
+}
+
+const CoinSelectorWrapper = (props) => {
+
+    return <Query query={GET_COINS}>
+        {({loading, error, data, fetchMore}) => {
+            if (loading || !data) return <div>Loading...</div>;
+            return <div className="autocomplete-wrapper">
+                <CoinSelector suggestions={data.getCoins.map(c => c.tokens)} {...props}/>
             </div>
         }
         }
-        inputProps={{placeholder,className:'textBox'}}
-        renderMenu={(items, value, style) => <div className="container"  children={items}/>}
-        value={text}
-        onChange={(e) => {
-            // console.log(text, coin.name);
-            setText(e.target.value)
-        }}
-        onSelect={(value, selectedCoin) => {
-            setCoin(selectedCoin);
-            console.log(selectedCoin);
-            onChange && onChange(selectedCoin);
-        }}
-        onMenuVisibilityChange={(isOpen)=>{
-            !isOpen && coin.name!==text && setText(coin.name);
-        }}
-        wrapperProps={{className:'coinPicker'}}
-    />;
+    </Query>
 
-}
-
-function CoinSelector({defaultCoin = {}, onChange = ()=>{}}) {
-
-    return <Query query={GET_COINS}>
-            {({data, loading}) => {
-                if (loading) return <div>Loading...</div>
-                console.error(data);
-                const coins = data.getCoins || [];
-              return <Coins defaultCoin={defaultCoin} onChange={onChange} coins={coins}/>
-            }}
-        </Query>;
-}
-
-CoinSelector.propTypes = {
-    onChange: PropTypes.func.isRequired
 };
+CoinSelectorWrapper.propTypes = {
+    defaultCoin: PropTypes.string,
+    onClick: PropTypes.func
+};
+export default CoinSelectorWrapper;
 
-export default CoinSelector;
+
+
+
+

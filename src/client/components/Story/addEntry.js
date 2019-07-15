@@ -7,9 +7,9 @@ import '../../styles/date-picker.scss';
 import withAuth from '../withAuth'
 import {ADD_STORY, GET_FEED, GET_USER_STORIES, ADD_ENTRY, GET_CURRENT_USER} from '../../queries'
 import Error from '../Error'
-import AutoComplete from '../AutoComplete';
+import CoinSelector from '../CoinSelector';
 
-function AddEntry({session, history}) {
+function AddEntry({session, history,refetch}) {
 
     const [date, setDate] = useState('');
     const [coin, setCoin] = useState('');
@@ -21,6 +21,7 @@ function AddEntry({session, history}) {
     const handleSubmit = async (e, addEntry) => {
         e.preventDefault();
         const entry = await addEntry();
+        await refetch();
         history.push('/');
     };
 
@@ -63,7 +64,8 @@ function AddEntry({session, history}) {
 
     const datePickerProps = {
         className: 'form-control',
-        placeholder: 'Date'
+        placeholder: 'Date',
+        required:true
     };
 
     return <div className="App">
@@ -74,14 +76,12 @@ function AddEntry({session, history}) {
         >
             {(addEntry, {data, loading, error}) => {
 
-                console.log(loading);
-                console.log(data);
                 return <form
                     className="form"
                     onSubmit={(e) => handleSubmit(e, addEntry)}
                 >
                     <h2>Add Entry</h2>
-                    <div style={{width:'100%',maxWidth:'600px',display:'inline-flex'}}>
+                    <div className="date-wrapper">
                         <DateTime dateFormat="YYYY-MM-DD"
                                   timeFormat="HH:mm:ss"
                                   defaultValue={date || ''}
@@ -93,8 +93,7 @@ function AddEntry({session, history}) {
                         <button className="now-btn" onClick={temp}>Now</button>
                     </div>
 
-                   {/* <CoinSelector onChange={updateCoin} defaultCoin={{}}/>*/}
-                   <AutoComplete onClick={updateCoin} />
+                   <CoinSelector onClick={updateCoin} />
                     <input
                         type="text"
                         placeholder="Amount"

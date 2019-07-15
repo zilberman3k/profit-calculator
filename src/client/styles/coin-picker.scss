@@ -25,7 +25,7 @@
 }
 
 .add-entry-amount {
-  // width: 100%;
+  width: 100%;
   max-width: 600px;
   display: block;
 }
@@ -35,7 +35,7 @@
   max-width: 600px;
   position: relative;
   .search {
-
+    width:100%;
   }
   .suggestions {
     max-height: 30rem;
@@ -44,7 +44,7 @@
     border-radius: 1%;
     overflow: auto;
     position: absolute;
-    width: inherit;
+    width: calc(100% - 4px);
     margin: -0.5rem 0 0 0;
     padding: 0;
     line-height: 1.2rem;

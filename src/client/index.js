@@ -65,7 +65,7 @@ const client = new ApolloClient({
     cache,
     connectToDevTools: true
 });
-console.error(GET_COINS);
+
 //client.query({query:GET_COINS}).then(console.error);
 // routes component
 const Root = ({session, refetch}) => (
@@ -73,7 +73,7 @@ const Root = ({session, refetch}) => (
         <Fragment>
             <Navbar session={session}/>
             <Switch>
-                <Route exact path="/" component={Home}/>
+                <Route exact path="/" render={()=><Home session={session}/>}/>
                 <Route path="/signin" render={() => <Signin refetch={refetch}/>}/>
                 <Route path="/signup" render={() => <Signup refetch={refetch}/>}/>
               {/*  <Route path="/story/:id" component={StoryPage}/>
@@ -82,7 +82,7 @@ const Root = ({session, refetch}) => (
                 <Route path="/add-story" render={() => <AddStory session={session}/>}/>*/}
               {/*  <Route path="/profile" render={() => <UserProfile session={session}/>}/>*/}
               {/*  <Route path="/search" component={SearchStory}/>*/}
-                <Route path="/add-entry" render={() => <AddEntry session={session}/>}/>
+                <Route path="/add-entry" render={() => <AddEntry session={session} refetch={refetch}/>}/>
                 <Route path="/edit-entry/:id" render={(...args) => <EditEntry session={session} />}/>
             </Switch>
         </Fragment>

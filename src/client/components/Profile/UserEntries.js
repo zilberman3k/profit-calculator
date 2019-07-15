@@ -49,7 +49,6 @@ function UserEntries({entries, total}) {
         {entries.map(entry => {
             // toNiv - wrap with mutation here...
             const {id, date, coin, amount, slug,profit} = entry;
-            console.log('**** - ', slug);
             const _date = moment(+date).format('YYYY-MM-DD HH:mm:ss');
             return <Tr key={id}>
                 <Td>{_date}</Td>

@@ -5,10 +5,7 @@ import Signout from './Auth/Signout'
 const GuessNavbar = () => (
 	<ul className="topnav">
 		<li>
-			<NavLink to="/">Home</NavLink>
-		</li>
-		<li>
-			<NavLink to="/search">Search</NavLink>
+			<NavLink to="/" exact={true}>Home</NavLink>
 		</li>
 		<li className="right">
 			<NavLink to="/signin">Login</NavLink>
@@ -18,15 +15,12 @@ const GuessNavbar = () => (
 		</li>
 	</ul>
 
-)
+);
 
 const AuthNavbar = () => (
 	<ul className="topnav">
 		<li>
-			<NavLink to="/">Home</NavLink>
-		</li>
-		<li>
-			<NavLink to="/search">Search</NavLink>
+			<NavLink to="/" exact={true}>Home</NavLink>
 		</li>
 		<li className="right">
 			<Signout />

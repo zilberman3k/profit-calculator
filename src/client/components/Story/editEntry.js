@@ -8,16 +8,6 @@ import withAuth from '../withAuth'
 import {ADD_STORY, GET_FEED, GET_USER_STORIES, EDIT_ENTRY, GET_CURRENT_USER} from '../../queries'
 import Error from '../Error'
 import CoinSelector from '../CoinSelector';
-import gql from 'graphql-tag';
-
-//// test /////
-import AutoComplete from '../AutoComplete';
-//////////////////////
-
-const test = (...args)=>{
-    console.log(args);
-}
-
 
 function EditEntry({session, history, match}) {
 
@@ -33,17 +23,15 @@ function EditEntry({session, history, match}) {
 
     const handleSubmit = async (e, editEntry) => {
         e.preventDefault();
-        debugger;
         try {
             const entry = await editEntry();
         }
         catch(e){
-        debugger;
         }
         history.push('/');
     };
 
-    const temp = (e) => {
+    const setNow = (e) => {
         e.preventDefault();
         setDate(moment().format('YYYY-MM-DD HH:mm:ss'));
         return false;
@@ -83,7 +71,8 @@ function EditEntry({session, history, match}) {
 
     const datePickerProps = {
         className: 'form-control',
-        placeholder: 'Date'
+        placeholder: 'Date',
+        required:true
     };
 
     return <div className="App">
@@ -104,7 +93,7 @@ function EditEntry({session, history, match}) {
                     onSubmit={(e) => handleSubmit(e, editEntry)}
                 >
                     <h2>Edit Entry</h2>
-                    <div style={{width:'100%',maxWidth:'600px',display:'inline-flex'}}>
+                    <div className="date-wrapper">
                         <DateTime dateFormat="YYYY-MM-DD"
                                   timeFormat="HH:mm:ss"
                                   defaultValue={date || ''}
@@ -113,12 +102,10 @@ function EditEntry({session, history, match}) {
                                   isValidDate={validateDate}
                                   onChange={e => updateInput('date', e)}
                         />
-                        <button className="now-btn" onClick={temp}>Now</button>
+                        <button className="now-btn" onClick={setNow}>Now</button>
                     </div>
 
-                  {/*  <CoinSelector onChange={updateCoin} defaultCoin={coin}/>*/}
-
-                    <AutoComplete defaultCoin={coin} onClick={updateCoin} />
+                    <CoinSelector defaultCoin={coin} onClick={updateCoin} />
 
                     <input
                         type="text"

@@ -42,6 +42,9 @@ const resolvers = {
     Query: {
         getCoins: async (root, _, ctx) => {
             ctx && console.log(ctx.coins.slice(0, 20));
+            if(ctx){
+                return ctx.coins;
+            }
             const coins = await axios.get('https://s2.coinmarketcap.com/generated/search/quick_search.json');
             const {data = []} = coins;
             return data.map(c => {
