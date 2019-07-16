@@ -1,5 +1,7 @@
 table.main-table {
-  a { color: inherit; }
+  a {
+    color: inherit;
+  }
   border: 3px solid #000000;
   width: 100%;
   text-align: center;
@@ -10,14 +12,25 @@ table.main-table {
   }
   tbody {
     tr {
-      &:nth-child(odd){
-        background:darkgray;
+      &:nth-child(odd) {
+        background: darkgray;
       }
-      &:nth-child(even){
-        background:lightgray;
+      &:nth-child(even) {
+        background: lightgray;
       }
       td {
         font-size: 13px;
+        &.edit-delete-buttons {
+          padding: 0;
+          font-weight: bolder;
+          a {
+            margin-right: 5px;
+          }
+          span {
+            margin-left: 5px;
+            cursor: pointer;
+          }
+        }
       }
     }
   }

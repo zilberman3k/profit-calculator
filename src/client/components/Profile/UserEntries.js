@@ -55,14 +55,14 @@ function UserEntries({entries, total}) {
                 <Td>{coin}</Td>
                 <Td>{amount}</Td>
                 <Td>{profit}</Td>
-                <Td><Link to={`/edit-entry/${id}`}>Edit</Link> { }<DeleteEntry id={id}/></Td>
+                <Td className="edit-delete-buttons"><Link to={`/edit-entry/${id}`}>Edit</Link> <DeleteEntry id={id}/></Td>
             </Tr>
         })}
 
         </Tbody>
         <tfoot>
         <tr><Th>Total</Th>
-            <th>{total}</th>
+            <th>{total? total+'$':''}</th>
         </tr>
         </tfoot>
     </Table>
