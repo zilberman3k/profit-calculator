@@ -20,12 +20,12 @@ class Signin extends Component {
 	}
 
 	validateForm () {
-		const { username, password } = this.state
+		const { username, password } = this.state;
 		// validate required inputs
 		return !username || !password
 	}
 	render () {
-		const { username, password } = this.state
+		const { username, password } = this.state;
 		return (
 			<div className="App">
 				<Mutation mutation={SIGNIN_USER}>
@@ -33,7 +33,7 @@ class Signin extends Component {
 						<form 
 							className="form" 
 							onSubmit={async (e) => { 
-									e.preventDefault()
+									e.preventDefault();
 									// send data to server
 									const { data } = await signinUser({ 
 										variables: {
@@ -42,11 +42,11 @@ class Signin extends Component {
 										}
 									})
 									// save token to local storage
-									localStorage.setItem('token', data.signinUser.token)
+									localStorage.setItem('token', data.signinUser.token);
 									// reset current User
-									await this.props.refetch()
+									await this.props.refetch();
 									// clear state
-									this.setState({ username: '', password: '' })
+									this.setState({ username: '', password: '' });
 									// redirect to home page
 									this.props.history.push('/')
 							}}

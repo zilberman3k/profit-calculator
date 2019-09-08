@@ -1,11 +1,11 @@
-import React, {Component, useState} from 'react'
-import {Mutation,Query} from 'react-apollo'
+import React, { useState} from 'react'
+import {Mutation} from 'react-apollo'
 import {withRouter} from 'react-router-dom'
 import DateTime from 'react-datetime';
 import moment from 'moment';
 import '../../styles/date-picker.scss';
 import withAuth from '../withAuth'
-import {ADD_STORY, GET_FEED, GET_USER_STORIES, EDIT_ENTRY, GET_CURRENT_USER} from '../../queries'
+import {EDIT_ENTRY, GET_CURRENT_USER} from '../../queries'
 import Error from '../Error'
 import CoinSelector from '../CoinSelector';
 

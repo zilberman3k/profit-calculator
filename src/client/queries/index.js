@@ -6,7 +6,7 @@ export const SIGNUP_USER = gql`
 			token
 		}
 	}
-`
+`;
 
 export const SIGNIN_USER = gql`
 	mutation signinUser($username: String!, $password: String!) {
@@ -14,7 +14,7 @@ export const SIGNIN_USER = gql`
 			token
 		}
 	}
-`
+`;
 export const GET_COINS = gql`
     query getCoins {
         getCoins {
@@ -266,4 +266,4 @@ export const UNLIKE_STORY = gql`
 			likes
 		}
 	}
-`
+`;

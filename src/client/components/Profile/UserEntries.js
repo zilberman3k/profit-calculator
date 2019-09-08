@@ -1,13 +1,9 @@
-import React, {Fragment, useState} from 'react'
-import {Query, Mutation, ApolloConsumer} from 'react-apollo'
+import React from 'react'
+import {Mutation} from 'react-apollo'
 import {Link} from 'react-router-dom'
 import {
-    GET_USER_STORIES,
-    GET_FEED,
     DELETE_ENTRY,
-    GET_CURRENT_USER,
-    GET_USER_ENTRIES,
-    GET_PROFIT_OF_ENTRY
+    GET_CURRENT_USER
 } from '../../queries'
 import moment from 'moment';
 
@@ -30,9 +26,6 @@ const DeleteEntry = ({id}) => {
 
 
 function UserEntries({entries, total}) {
-
-    // todo - check for popup verify delete...
-
     return <Table className="main-table">
         <Thead>
         <Tr>
@@ -48,7 +41,7 @@ function UserEntries({entries, total}) {
         <Tbody>
         {entries.map(entry => {
             // toNiv - wrap with mutation here...
-            const {id, date, coin, amount, slug,profit} = entry;
+            const {id, date, coin, amount, profit} = entry;
             const _date = moment(+date).format('YYYY-MM-DD HH:mm:ss');
             return <Tr key={id}>
                 <Td>{_date}</Td>

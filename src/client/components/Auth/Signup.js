@@ -6,29 +6,29 @@ import Error from '../Error'
 
 class Signup extends Component {
 	constructor (props) {
-		super(props)
+		super(props);
 		this.state = {
 			username: '',
 			email: '',
 			password: '',
 			password2: ''
 		}
-		this.handleChange = this.handleChange.bind(this)
-		this.validateForm = this.validateForm.bind(this)
+		this.handleChange = this.handleChange.bind(this);
+		this.validateForm = this.validateForm.bind(this);
 	}
 
 	handleChange (e) {
-		this.setState({ [e.target.name]: e.target.value })
+		this.setState({ [e.target.name]: e.target.value });
 	}
 
 	validateForm () {
 		// check required inputs
-		const { username, email, password, password2 } = this.state
-		return !username || !email || !password || !password2 || (password2 !== password)
+		const { username, email, password, password2 } = this.state;
+		return !username || !email || !password || !password2 || (password2 !== password);
 	}
 
 	render () {
-		const { username, email, password, password2 } = this.state 
+		const { username, email, password, password2 } = this.state ;
 
 		return (
 			<div className="content">
@@ -41,15 +41,15 @@ class Signup extends Component {
 						className="form"
 						onSubmit={async (e) => {
 							try  {
-								e.preventDefault()
+								e.preventDefault();
 								// get token from graphql server
 								const {data} = await signupUser({ variables: { username, password, email }})
 								// save token to local storage
-								localStorage.setItem('token', data.signupUser.token)
+								localStorage.setItem('token', data.signupUser.token);
 								// reload current user data
-								await this.props.refetch()
+								await this.props.refetch();
 								// clear current state
-								this.setState({ email: '', password: '', password2: '', username: ''})
+								this.setState({ email: '', password: '', password2: '', username: ''});
 								// redirect to home page
 								this.props.history.push('/')
 	

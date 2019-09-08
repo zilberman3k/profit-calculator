@@ -1,4 +1,6 @@
-exports.typeDefs = `
+const {gql} = require('apollo-server');
+
+const typeDefs = gql`
 	type User {
 		username: String!
 		email: String!
@@ -8,10 +10,7 @@ exports.typeDefs = `
 	}
     type Coin {
         tokens:String
-    } 
-    
- 
- 
+    }
     type Entry{
         id: ID!
         date: String!
@@ -21,7 +20,6 @@ exports.typeDefs = `
         valueAtBuying: Float
         profit: Float
     }
-
 	type Story {
 		id: ID!
 		title: String!
@@ -32,19 +30,15 @@ exports.typeDefs = `
 		createdAt: String!
 		text: String!
 		likes: Int!
-	}	
-
-
+	}
 	type Token {
 		token: String!
 	}
-
 	type Feed {
 		cursor: String!
 		stories: [Story]
 		entries: [Entry]
 	}
-
 	type Query {
 		getCoins: [Coin]
 		getCurrentUser: User
@@ -58,7 +52,6 @@ exports.typeDefs = `
 		searchStories(searchText: String): [Story]
 		getUserByUserName(username: String!):User
 	}
-
 	type Mutation {
 		setProfitOfUser(profits: [Float]):Float
 		deleteEntry(id:ID!):Entry
@@ -89,5 +82,10 @@ exports.typeDefs = `
 		likeStory (id: ID!): Story
 		unlikeStory(id: ID!): Story
 	}
-
+    schema { 
+    query: Query
+    mutation: Mutation
+    }
 `;
+
+export default typeDefs;

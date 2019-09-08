@@ -1,8 +1,7 @@
-import React, {Component} from "react";
-import PropTypes from "prop-types";
-import gql from 'graphql-tag'
-import {Mutation, Query, ApolloConsumer} from 'react-apollo'
-import {ADD_STORY, GET_FEED, GET_USER_STORIES, EDIT_ENTRY, GET_CURRENT_USER, GET_COINS} from '../queries'
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
+import { Query} from 'react-apollo'
+import { GET_COINS} from '../queries'
 import '../styles/coin-picker.scss';
 
 export class CoinSelector extends Component {
@@ -76,7 +75,7 @@ export class CoinSelector extends Component {
     };
     onKeyDown = e => {
 
-        const {activeSuggestion, filteredSuggestions, name = '', slug} = this.state;
+        const {activeSuggestion, filteredSuggestions, name = ''} = this.state;
 
         if (e.keyCode === 13) {
             e.preventDefault();
@@ -116,8 +115,6 @@ export class CoinSelector extends Component {
             onChange,
             onClick,
             onKeyDown,
-            onFocus,
-            onBlur,
             state: {
                 activeSuggestion,
                 filteredSuggestions,

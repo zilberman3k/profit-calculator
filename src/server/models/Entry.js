@@ -21,8 +21,11 @@ const entrySchema = new Schema({
     },
     valueAtBuying: {
         type: Number,
-        required: false
+        required: true
     }
+}, {
+    toObject: {virtuals: true},
+    toJSON: {virtuals: true}
 });
 
 entrySchema.index({'$**': 'text'});

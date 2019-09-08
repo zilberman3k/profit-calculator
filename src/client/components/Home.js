@@ -1,7 +1,6 @@
-import React, {useState} from 'react';
-import StoryCard from './Story/StoryCard';
-import {ApolloConsumer, Query, Mutation} from 'react-apollo';
-import {GET_FEED, GET_TOTAL_PROFIT_OF_USER, GET_CURRENT_USER, SET_PROFIT_OF_USER} from '../queries';
+import React from 'react';
+import {Query} from 'react-apollo';
+import {GET_CURRENT_USER, SET_PROFIT_OF_USER} from '../queries';
 import UserEntries from './Profile/UserEntries';
 import HPLoader from './loaders/HPLoader';
 import Welcome from './Welcome';

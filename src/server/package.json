@@ -1,19 +1,26 @@
 {
-  "name": "server",
+  "name": "profits",
   "version": "1.0.0",
-  "description": "",
+  "description": "profit-calculator server",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec babel-node ./server.js"
+    "server:dev": "nodemon --exec babel-node --presets @babel/preset-env local-server.js",
+    "build:dev": "NODE_ENV=development webpack",
+    "build:prod": "NODE_ENV=production webpack"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
+  "bin": {
+    "functions-framework": "server.js"
+  },
   "dependencies": {
+    "apollo-cache-inmemory": "^1.6.0",
+    "apollo-client": "^2.5.1",
     "apollo-link-schema": "^1.2.2",
-    "apollo-server": "^2.4.8",
-    "apollo-server-express": "^2.4.8",
+    "apollo-server": "^2.8.0",
+    "apollo-server-cloud-functions": "^2.8.0",
+    "apollo-server-express": "^2.7.2",
+    "axios": "^0.19.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
@@ -21,17 +28,28 @@
     "express": "^4.16.4",
     "graphql": "^14.1.1",
     "graphql-playground-middleware-express": "^1.7.12",
-    "graphql-server-express": "^1.4.0",
     "graphql-tag": "^2.10.1",
     "graphql-tools": "^4.0.4",
     "jsonwebtoken": "^8.5.0",
-    "mongoose": "^5.4.18",
-    "nodemon": "^1.18.10"
+    "mongoose": "^5.6.7",
+    "sriracha": "^1.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.5",
+    "@babel/core": "^7.5.5",
     "@babel/node": "^7.4.5",
-    "@babel/preset-env": "^7.4.5"
+    "@babel/preset-env": "^7.5.5",
+    "@google-cloud/functions-framework": "^1.2.1",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "dotenv-webpack": "^1.7.0",
+    "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^1.18.10",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-node-externals": "^1.7.2"
   }
 }
