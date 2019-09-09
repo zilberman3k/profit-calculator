@@ -85,9 +85,6 @@ function EditEntry({session, history, match}) {
         >
             {(editEntry, {data, loading, error,client}) => {
 
-                console.log(data,inputs);
-                debugger;
-
                 return <form
                     className="form"
                     onSubmit={(e) => handleSubmit(e, editEntry)}

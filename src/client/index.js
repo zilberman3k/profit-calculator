@@ -34,10 +34,10 @@ if (localStorage.getItem('token')) {
     }
 }
 
-
+const uri = process.env.REACT_APP_INSTANCE !== 'remote' ? 'http://localhost:5000/graphql' : 'http://localhost:8585';
 const httpLink = createHttpLink({
-    uri: 'http://localhost:5000/graphql'
-  //  useGETForQueries:true
+    uri
+    //  useGETForQueries:true
 });
 
 // set context to request header
@@ -65,12 +65,12 @@ const Root = ({session, refetch}) => (
         <Fragment>
             <Navbar session={session}/>
             <Switch>
-                <Route exact path="/" render={()=><Home session={session}/>}/>
+                <Route exact path="/" render={() => <Home session={session}/>}/>
                 <Route path="/signin" render={() => <Signin refetch={refetch}/>}/>
                 <Route path="/signup" render={() => <Signup refetch={refetch}/>}/>
                 <Route path="/about" component={About}/>
                 <Route path="/add-entry" render={() => <AddEntry session={session} refetch={refetch}/>}/>
-                <Route path="/edit-entry/:id" render={(...args) => <EditEntry session={session} />}/>
+                <Route path="/edit-entry/:id" render={(...args) => <EditEntry session={session}/>}/>
             </Switch>
         </Fragment>
     </BrowserRouter>

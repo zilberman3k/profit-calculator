@@ -116,7 +116,6 @@ const resolvers = {
                 try {
                     const {price_usd} = result.data;
                     valueNow = price_usd.slice(-1)[0][1];
-                    console.log(slug, valueNow);
                 } catch (e) {
                 }
                 if (valueNow !== null) {

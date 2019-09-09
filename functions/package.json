@@ -4,7 +4,6 @@
   "description": "Profits cloud function apollo graphql server",
   "main": "index.js",
   "scripts": {
-    "init": "npm i && cd ../src/server && npm run build:dev",
     "start": "functions-framework --port 8585 --target=graphql"
   },
   "engines": {

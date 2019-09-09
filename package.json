@@ -32,11 +32,14 @@
     "uuid": "^3.3.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "start:dev": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "init": "npm i && npm run init:local-server && npm run init:remote-server && cd functions && npm i",
+    "init:local-server": "cd src/server && npm i",
+    "init:remote-server": " cd src/server && npm run build:dev",
+    "start": "npm run start:local-server & REACT_APP_INSTANCE=local react-scripts start",
+    "start:remote": "npm run start:remote-server & REACT_APP_INSTANCE=remote react-scripts start",
+    "start:local-server": "cd src/server && npm run server:dev",
+    "start:remote-server": "cd functions && npm run start",
+    "build:client": "react-scripts build"
   },
   "engines": {
     "node": ">= 8.0.0",
